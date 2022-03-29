@@ -142,7 +142,7 @@ _Nota: esta sección explicará cómo se desarrollará y ejecutará el proyecto.
 
 _Nota: esta sección se enfocará en describir el objeto, los elementos que serán construidos o desarrollados como parte del alcance de esta iniciativa._
 
-_Debe dejar en claro que el objetivo no es desarrollar identidades digitales exclusivamente para su uso en la Ciudad de Buenos Aires ni para ningún otro contexto específico, sino sentar las bases de un protocolo que pueda ser utilizado o incluso replicado por quién sea, dónde sea. (Pongamos esto en el propósito y en el resumen{_
+_Debe dejar en claro que el objetivo no es desarrollar identidades digitales exclusivamente para su uso en la Ciudad de Buenos Aires ni para ningún otro contexto específico, sino sentar las bases de un protocolo que pueda ser utilizado o incluso replicado por quién sea, dónde sea._
 
 _El documento no hará énfasis en los stacks tecnológicos a utilizar, sino que planteará una solución, en la mayor medida posible, agnóstica a las herramientas empleadas para su implementación._
 
@@ -254,7 +254,7 @@ Si bien todos estas aproximaciones cubren, en alguna medida, los requerimientos 
 
 Los [métodos DIDs](#_1jz99r2mnluw) representan el componente central en la implementación de este nivel del modelo, y una de las decisiones más críticas en este sentido es la definición de qué métodos DID serán soportados por la plataforma para cada escenario en particular, concretamente: qué métodos DIDs serán soportados para administrar DIDs generados en esta plataforma y qué métodos DID serán soportados sólo en modalidad resolución (sólo lectura) para efectos de compatibilidad e interoperabilidad con otras plataformas similares.
 
-Es importante destacar que no hay una única implementación de un método DID, sino múltiples implementaciones que cumplen con la especificación [DID-CORE](https://www.w3.org/TR/did-core/) y que están optimizadas y personalizadas para distintos requerimientos. A la fecha, hay más de 70 métodos DID registrados en el[W3C DID registry](https://www.w3.org/TR/did-spec-registries/#did-methods), y seguramente ese número seguirá creciendo aceleradamente en el futuro próximo.
+Es importante destacar que no hay una única implementación de un método DID, sino múltiples implementaciones que cumplen con la especificación [DID-CORE](https://www.w3.org/TR/did-core/) y que están optimizadas y personalizadas para distintos requerimientos. A la fecha, hay más de 70 métodos DID registrados en el [W3C DID registry](https://www.w3.org/TR/did-spec-registries/#did-methods), y seguramente ese número seguirá creciendo aceleradamente en el futuro próximo.
 
 Si bien, en teoría, las plataformas de identidad digital descentralizada deberían poder manejar todas las implementaciones de métodos DID sin un esfuerzo adicional, en la práctica, dado que [DID-CORE](https://www.w3.org/TR/did-core/) es un estándar que permite ciertas extensiones, cada método DID presenta particularidades y su integración a la plataforma requiere un esfuerzo considerable.
 
