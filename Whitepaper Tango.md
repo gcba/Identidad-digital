@@ -294,12 +294,14 @@ La creación de este método DID no será realizada desde cero, sino tomando com
 
 De estas tres iniciativas, consideramos que SOVRIN, aún cuando es una experiencia muy valiosa, no puede ser tomada como base porque requieren: o bien montarse sobre la red Sovrin, o desplegar una nueva red usando Hyperdleger Indy, y en ambos casos serían redes permisionadas, lo cual colisiona con uno de los principios fundamentales de nuestra iniciativa de ser pública, abierta y no-permisionada.
 
-En función de eso, una posible alternativa a evaluar sería:
+En función de eso, las dos alternativas a evaluar serían:
 
-1. Desplegar el método DID utilizando Sidetree como base en una red blockchain y una red IPFS que deberán ser definidas al momento de realizar la especificación detallada de la implementación.
+1. Desplegar el método DID utilizando ETHR sobre un protocolo de nivel 2 en alguna red que sea EVM compatible, para tener niveles de escalabilidad y costos compatibles con los requerimientos de esta iniciativa.
+2. Desplegar el método DID utilizando Sidetree como base en una red blockchain y una red IPFS que deberán ser definidas al momento de realizar la especificación detallada de la implementación.
 
-Esta opción tiene ventajas y desventajas, que deberán ser estudiadas en detalle antes de definir si es la opción más conveniente para esta iniciativa. De manera muy resumida, podemos decir que:
+Cada una de estas dos opciones tiene sus ventajas y desventajas, que deberán ser estudiadas en detalle antes de definir cuál es la opción más conveniente para esta iniciativa. De manera muy resumida, podemos decir que:
 
+- **ETHR** , por el simple hecho de ser una implementación más antigua, tiene muchas más implementaciones, tiene abundante documentación y cuenta con un ecosistema más amplio de desarrolladores con experiencia. Por otra parte, por la misma razón de haber sido pionera, presenta algunos problemas estructurales en su diseño, lo cual limita su funcionalidad y su desarrollo a futuro. Un aspecto favorable de ETHR es que no requiere el despliegue de nodos de ningún tipo, solo desplegar los smart contracts asociados al método en alguna red compatible con EVM.
 - **Sidetree** , al ser una implementación más moderna, que recoge experiencias anteriores y avances en la tecnología de base, tiene un diseño mucho más eficiente y con mayor potencial de desarrollo a futuro, está siendo apadrinada directamente por la Decentralized Identity Foundation y siendo adoptada por actores muy influyentes (Ej.: Microsoft). A la vez, por las mismas razones, no cuenta con tantas implementaciones, la documentación es incompleta y el ecosistema de desarrolladores con experiencia es limitado. Una consideración importante a tener en cuenta con Sidetree es que, aunque es un protocolo que se ancla en una red blockchain subyacente y aprovecha el mecanismo de consenso de la misma, requiere el despliegue de nodos tanto para el protocolo Sidetree, como para la red IPFS que se utilice para almacenar la información, esta característica puede ser una ventaja en algunos casos, pero requiere un mayor esfuerzo para crear el ecosistema de nodos que darán soporte a la red.
 
 #### **Temas a profundizar en la fase de co-creación del whitepaper:**
