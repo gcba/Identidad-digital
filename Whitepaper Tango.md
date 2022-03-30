@@ -41,6 +41,9 @@ V. 0.1
    3.8 [Unión Europea](#38-unión-europea)
 
    3.9 [IDunion](#39-idunion)
+  
+   3.10 [Encointer](#310-encointer)
+
 
 4. **[Conceptos de Identidad Auto-Soberana](#4-conceptos-de-identidad-auto-soberana)**
 
@@ -181,6 +184,8 @@ _Nota: esta sección hará referencia a trabajos preexistentes que se analizaron
 ### 3.8. [Unión Europea](https://essif-lab.eu/#:~:text=EUROPEAN%20SELF%2DSOVEREIGN%20IDENTITY%20FRAMEWORK,Internet%20and%20in%20real%20life.)
 
 ### 3.9. [IDunion](https://idunion.org/?lang=en)
+
+### 3.10 [Encointer](https://encointer.org/) [proof-of-personhood](https://encointer.org/encointer-for-web3/)
 
 ## 4. Conceptos de Identidad Auto-Soberana
 
