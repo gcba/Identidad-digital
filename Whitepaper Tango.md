@@ -34,13 +34,15 @@ V. 0.1
 
    3.5 [Ethereum community (ENS / EIPs)](#35-ethereum-community-ens--eips)
 
-   3.6 [Proof Of Humanity](#36-proof-of-humanity)
+   3.6 [Proyecto DIDI](#36-proyecto-didi)
 
-   3.7 [Estado de Colorado](#37-estado-de-colorado)
+   3.7 [Proof Of Humanity](#37-proof-of-humanity)
 
-   3.8 [Unión Europea](#38-unión-europea)
+   3.8 [Estado de Colorado](#38-estado-de-colorado)
 
-   3.9 [IDunion](#39-idunion)
+   3.9 [Unión Europea](#39-unión-europea)
+   
+   3.10 [IDunion](#310-idunion)
 
 4. **[Conceptos de Identidad Auto-Soberana](#4-conceptos-de-identidad-auto-soberana)**
 
@@ -174,13 +176,15 @@ _Nota: esta sección hará referencia a trabajos preexistentes que se analizaron
 
 ### 3.5. Ethereum community ([ENS](https://ens.domains/es/) / [EIPs](https://eips.ethereum.org/EIPS/eip-1484))
 
-### 3.6. [Proof Of Humanity](https://www.proofofhumanity.id/)
+### 3.6. [Proyecto DIDI](https://didi.org.ar/)
 
-### 3.7. [Estado de Colorado](https://mycolorado.state.co.us/)
+### 3.7. [Proof Of Humanity](https://www.proofofhumanity.id/)
 
-### 3.8. [Unión Europea](https://essif-lab.eu/#:~:text=EUROPEAN%20SELF%2DSOVEREIGN%20IDENTITY%20FRAMEWORK,Internet%20and%20in%20real%20life.)
+### 3.8. [Estado de Colorado](https://mycolorado.state.co.us/)
 
-### 3.9. [IDunion](https://idunion.org/?lang=en)
+### 3.9. [Unión Europea](https://essif-lab.eu/#:~:text=EUROPEAN%20SELF%2DSOVEREIGN%20IDENTITY%20FRAMEWORK,Internet%20and%20in%20real%20life.)
+
+### 3.10. [IDunion](https://idunion.org/?lang=en)
 
 ## 4. Conceptos de Identidad Auto-Soberana
 
