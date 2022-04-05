@@ -182,6 +182,8 @@ _Nota: esta sección hará referencia a trabajos preexistentes que se analizaron
 
 ### 3.9. [IDunion](https://idunion.org/?lang=en)
 
+### 3.10. [LACChain ID](https://publications.iadb.org/publications/english/document/LACChain-ID-Framework-A-Set-of-Recommendations-for-Blockchain-Based-Interoperable-Privacy-Preserving-Regulatory-Compliant-Secure-and-Standardized-Digital-Identifiers-Credentials-and-Wallets.pdf)
+
 ## 4. Conceptos de Identidad Auto-Soberana
 
 _Nota: esta sección detallará todas las definiciones de términos relevantes que serán utilizados a lo largo del documento._
