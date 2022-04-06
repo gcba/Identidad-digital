@@ -45,6 +45,8 @@ V. 0.1
    3.10 [LACChain ID](#310-lacchain-id)
    
    3.11 [DIDI](#311-didi)
+   
+   3.12 [Encointer](#312-encointer)
 
 4. **[Conceptos de Identidad Auto-Soberana](#4-conceptos-de-identidad-auto-soberana)**
 
@@ -189,6 +191,8 @@ _Nota: esta sección hará referencia a trabajos preexistentes que se analizaron
 ### 3.10. [LACChain ID](https://publications.iadb.org/publications/english/document/LACChain-ID-Framework-A-Set-of-Recommendations-for-Blockchain-Based-Interoperable-Privacy-Preserving-Regulatory-Compliant-Secure-and-Standardized-Digital-Identifiers-Credentials-and-Wallets.pdf)
 
 ### 3.11. [DIDI](https://didi.org.ar/)
+
+### 3.12. [Encointer](https://encointer.org/) [proof-of-personhood](https://encointer.org/encointer-for-web3/)
 
 ## 4. Conceptos de Identidad Auto-Soberana
 
