@@ -96,6 +96,12 @@ V. 0.1
 
 6. **[Estrategia de Adopción](#6-estrategia-de-adopción)**
 
+7. **[Biometría](#7-biometria)**
+
+8. **[Gestión y recupero de identidad](#8-gestion-y-recupero-de-identidad)**
+
+9. **[Gobierno](#9-gobierno)**
+
 - **[Anexo I](#anexo-i)**
 
 - **[Anexo II](#anexo-ii)**
@@ -442,6 +448,12 @@ Algunos pasos básicos del camino a seguir
 4. Adopción masiva de identidades digitales impulsada por la aplicación GCBA.
 5. Impulsar la adopción del ecosistema por la sociedad y actores privados.
 6. Impulsar la adopción de reputaciones vinculadas a la identidad digital entre privados.
+
+## 7. Biometría
+
+## 8. Gestión y recupero de identidad
+
+## 9. Gobierno
 
 ## Anexo I
 
