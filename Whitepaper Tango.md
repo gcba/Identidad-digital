@@ -75,9 +75,7 @@ V. 0.1
    - [Temas a profundizar en la fase de co-creación del whitepaper:](#temas-a-profundizar-en-la-fase-de-co-creación-del-whitepaper)
 
    5.2 [Nivel 2: billeteras y agentes digitales](#52-nivel-2-billeteras-y-agentes-digitales)
-   
-   - [Tipos de Billeteras](#tipos-de-billeteras)
-   
+      
    - [Tipos de billeteras en la Web 3.0 ](#tipos-de-billeteras-en-la-web-3.0)
    
    - [Billeteras y Agentes - terminología relacionada ](#billeteras-y-agentes-terminologia-relacionada)
