@@ -436,7 +436,19 @@ Temas a abordar:
 
 Estos principios de arquitectura son los que permitirán cumplir con los 10 principios de identidad auto-soberana (ver [Anexo II](anexo-ii)).
 
-## 6. Estrategia de Adopción
+## 6. Biometría
+
+_Nota: en esta sección se incluirán las definiciones y criterios relevantes para la implementación de biometría en la creación y gestión de identidades auto soberanas, acceso credenciales y autorización de transacciones, entre otras que puedan surgir._
+
+## 7. Gestión y recupero de identidad
+
+_Nota: en esta sección se incluirán las definiciones y criterios relevantes para la gestión de identidades auto soberana como también recupero en el caso de pérdida de control sobre la identidad._
+
+## 8. Gobierno
+
+_Nota: en esta sección se ahondará sobre las reglas de gobernanza del ecosistema._
+
+## 9. Estrategia de Adopción
 
 _Nota: en esta sección se incluirán las definiciones y criterios relevantes para lograr una amplia adopción de la plataforma, contando con el respaldo e impulso que se puede dar desde el GCBA_
 
@@ -448,12 +460,6 @@ Algunos pasos básicos del camino a seguir
 4. Adopción masiva de identidades digitales impulsada por la aplicación GCBA.
 5. Impulsar la adopción del ecosistema por la sociedad y actores privados.
 6. Impulsar la adopción de reputaciones vinculadas a la identidad digital entre privados.
-
-## 7. Biometría
-
-## 8. Gestión y recupero de identidad
-
-## 9. Gobierno
 
 ## Anexo I
 
