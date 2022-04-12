@@ -100,7 +100,7 @@ V. 0.1
 
 - **[Anexo II](#anexo-ii)**
 
-- **[Anexo III - Billeteras Cripto vs Billeteras de Identidad](#anexo-iii-billeteras-cripto-vs-billeteras-de-identidad)**
+- **[Anexo III](#anexo-iii)**
 
 - **[Glosario](#glosario)**
 
@@ -475,7 +475,9 @@ Mapeo de principios de diseño contra los 10 principios para la identidad auto-g
 | MINIMALIZACIÓN                                   | _Selective Disclosure_                                |
 | PROTECCIÓN                                       | Estándares de seguridad                               |
 
-## Anexo III - Billeteras Cripto vs Billeteras de Identidad
+## Anexo III
+
+### Billeteras Cripto vs Billeteras de Identidad
 
 Como se mencionó anteriormente en este documento, en el contexto de la Web 3.0 existen dos tipos de billeteras que resultan relevantes:  
 
@@ -485,14 +487,14 @@ Como se mencionó anteriormente en este documento, en el contexto de la Web 3.0 
 A continuación se describen, comparativamente, las características fundamentales de cada uno de estos dos tipos de billeteras y, para facilitar la lectura, en este anexo nos referiremos a cada uno de ellos como “**billeteras cripto**” y “**billeteras de identidad**” respectivamente.
 
 
-### Aspectos generales
+#### Aspectos generales
 
 Tanto las billeteras cripto, como las billeteras de identidad pertenecen o están vinculadas a un “sujeto”, el cual puede ser un individuo, una organización o incluso a una cosa (Ej.: un vehículo eléctrico puede tener vinculada una billetera). 
 
 Desde el punto de vista de la utilidad, mientras las billeteras cripto se enfocan a manejar valores que el sujeto posee (Ej.: criptomonedas o NFTs), las billeteras de identidad se enfocan a manejar credenciales que describen alguna característica de la identidad del sujeto (Ej.: una licencia de conducir o un título universitario).  
 
 
-### Claves Privadas y Firma Digital
+#### Claves Privadas y Firma Digital
 
 La capacidad más básica y fundamental de ambos tipos de billeteras es la que permite administrar claves privadas y firmas digitales y en ambos casos se implementa de manera similar, de hecho, muchas implementaciones se realizan utilizando las mismas primitivas y librerías criptográficas.
 
@@ -501,7 +503,7 @@ En ambos casos se requiere implementar un “Key Management Service” (KMS) que
 Mientras que en las billeteras cripto, las claves privadas se utilizan para demostrar el control sobre activos digitales que están almacenados en una red blockchain, en las billeteras de identidad las claves privadas se utilizan para demostrar el control sobre alguno de los aspectos descritos en un DID document. 
 
 
-### Almacenamiento
+#### Almacenamiento
 
 Desde el punto de almacenamiento existen diferencias significativas entre las “billeteras cripto” y las “billeteras de identidad”, tanto en “la información que almacenan”, como en los mecanismos de replicación y sincronización que implementan. 
 
