@@ -78,9 +78,9 @@ V. 0.1
       
    - [Tipos de billeteras en la web3](#tipos-de-billeteras-en-la-web3)
    
-   - [Billeteras y Agentes - terminología relacionada](#billeteras-y-agentes-terminologia-relacionada)
+   - [Billeteras y Agentes, terminología relacionada](#billeteras-y-agentes-terminologia-relacionada)
    
-   - [Billeteras de Identidad - Arquitectura conceptual](#billeteras-de-identidad-arquitectura-conceptual)
+   - [Billeteras de Identidad, arquitectura conceptual](#billeteras-de-identidad-arquitectura-conceptual)
    
    - [Billeteras individuales vs organizacionales](#billeteras-individuales-vs-organizacionales)
    
@@ -353,7 +353,7 @@ Si bien ambos tipos de billeteras se utilizan para implementar aplicaciones que 
 
 Dado que Tango se enfoca a la problemática de Identidad Auto Soberana, el término “billetera” se utilizará para referirnos al tipo de billeteras que se utiliza para manejar la problemática de identidad, pero, dado que existe cierta superposición entre las audiencias de Activos Criptográficos e Identidad Auto Soberana, y además porque es posible que en el futuro aparezcan billeteras qué sean capaces de manejar ambos escenarios de uso, en el “Anexo III” de este documento incluimos un breve análisis comparativo de las características fundamentales de cada uno de estos tipos de billeteras.
 
-#### **Billeteras y Agentes - terminología relacionada**
+#### **Billeteras y Agentes, terminología relacionada**
 
 Dado que no existe total uniformidad respecto de la terminología que es utilizada en las distintas comunidades y proyectos que abordan la problemática de la identidad Auto Soberana, en particular respecto del significado de los términos Billetera y Agente, definiremos en esta sección lo que entendemos por cada uno de esos términos dentro del proyecto Tango.
 
@@ -363,7 +363,7 @@ Agente: un agente es un módulo de software que actúa como representante de un 
 
 Billetera de Identidad: dentro del contexto de Tango utilizaremos este término para referirnos a la entidad lógica que combina todas las capacidades que tienen las billeteras y los agentes según las definiciones dadas en los dos párrafos anteriores. Esta entidad es en definitiva la que utilizan los distintos sujetos – individuos, organizaciones o cosas – para ejecutar las distintas operaciones relacionadas con su identidad Auto Soberana.   
 
-#### **Billeteras de Identidad - Arquitectura conceptual**
+#### **Billeteras de Identidad, arquitectura conceptual**
 
 En esta sección se describen los principales componentes que a nuestro criterio deben incorporarse a la arquitectura de una Wallet de Identidad, el cual trata de sintetizar y homogeneizar las descripciones y la terminología que utilizan distintos grupos y proyectos que abordan este tema como parte de la problemática de Identidad Auto Soberana. Para esto, dado que no existe total acuerdo ni en los componentes, ni en la terminología utilizada para describir la arquitectura de una Billetera de Identidad en dichos grupos y proyectos, hemos tomado como base las especificaciones que se están siendo desarrolladas por el W3C y la Decentralized Identity Foundation y las complementamos con elementos que provienen de los otros grupos o proyectos y que consideramos valiosos y complementarios.  
 
