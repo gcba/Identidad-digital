@@ -100,6 +100,8 @@ V. 0.1
 
 - **[Anexo II](#anexo-ii)**
 
+- **[Anexo III](#anexo-iii)**
+
 - **[Glosario](#glosario)**
 
 ## 1. Resumen
@@ -419,14 +421,11 @@ Temas a abordar:
 - Selective disclosure
 - Recuperación de identidad
 
-  1.
-
 ### 5.4. Nivel 4: aplicaciones
 
 Nivel 4: ecosistemas de confianza digital facilita el desarrollo de ecosistemas de confianza digital, familias completas de aplicaciones y credenciales que no solo están diseñadas para interoperar técnicamente, sino que además comparten un marco común de gobernanza del ecosistema, lo cual, entre otras cosas, permite definir modelos de información estandarizados para el conjunto de credenciales propio de cada ecosistema, lo cual habilita la interoperabilidad dentro de dichos ecosistemas.
 
 Temas a abordar:
-
 - Interoperabilidad
 
 Estos principios de arquitectura son los que permitirán cumplir con los 10 principios de identidad auto-soberana (ver [Anexo II](anexo-ii)).
@@ -475,6 +474,58 @@ Mapeo de principios de diseño contra los 10 principios para la identidad auto-g
 | CONSENTIMIENTO                                   | _Selective Disclosure_                                |
 | MINIMALIZACIÓN                                   | _Selective Disclosure_                                |
 | PROTECCIÓN                                       | Estándares de seguridad                               |
+
+## Anexo III
+
+## Billeteras Cripto vs Billeteras de Identidad
+
+Como se mencionó anteriormente en este documento, en el contexto de la Web 3.0 existen dos tipos de billeteras que resultan relevantes:  
+
+* Billeteras utilizadas para manejar **activos digitales** (Ej.: Criptomonedas, NFTs)
+* Billeteras utilizadas para manejar **credenciales verificables** (Ej.: licencias de conducir, títulos universitarios). 
+
+A continuación se describen, comparativamente, las características fundamentales de cada uno de estos dos tipos de billeteras y, para facilitar la lectura, en este anexo nos referiremos a cada uno de ellos como “**billeteras cripto**” y “**billeteras de identidad**” respectivamente.
+
+
+### Aspectos generales
+
+Tanto las billeteras cripto, como las billeteras de identidad pertenecen o están vinculadas a un “sujeto”, el cual puede ser un individuo, una organización o incluso a una cosa (Ej.: un vehículo eléctrico puede tener vinculada una billetera). 
+
+Desde el punto de vista de la utilidad, mientras las billeteras cripto se enfocan a manejar valores que el sujeto posee (Ej.: criptomonedas o NFTs), las billeteras de identidad se enfocan a manejar credenciales que describen alguna característica de la identidad del sujeto (Ej.: una licencia de conducir o un título universitario).  
+
+
+### Claves Privadas y Firma Digital
+
+La capacidad más básica y fundamental de ambos tipos de billeteras es la que permite administrar claves privadas y firmas digitales y en ambos casos se implementa de manera similar, de hecho, muchas implementaciones se realizan utilizando las mismas primitivas y librerías criptográficas.
+
+En ambos casos se requiere implementar un “Key Management Service” (KMS) que permita generar y almacenar pares de claves públicas y privadas, proteger las claves privadas y firmar digitalmente utilizando diversidad de algoritmos criptográficos. En algunos casos esta capacidad puede además soportar esquemas de múltiples firmas normalmente conocidos como “multisig”. 
+
+Mientras que en las billeteras cripto, las claves privadas se utilizan para demostrar el control sobre activos digitales que están almacenados en una red blockchain, en las billeteras de identidad las claves privadas se utilizan para demostrar el control sobre alguno de los aspectos descritos en un DID document. 
+
+
+### Almacenamiento
+
+Desde el punto de almacenamiento existen diferencias significativas entre las “billeteras cripto” y las “billeteras de identidad”, tanto en “la información que almacenan”, como en los mecanismos de replicación y sincronización que implementan. 
+
+Mientras que las “billeteras cripto” sólo almacenan la información relacionada con el KMS, es decir: claves privadas, claves públicas y direcciones blockchain – dado que el resto de la información se encuentra almacenada en las redes blockchain – las “billeteras de identidad”, son responsables de almacenar en forma privada y segura toda la información asociada a la identidad del sujeto, principalmente sus credenciales verificables. Por ejemplo: mientras el saldo de una criptomoneda asociado a una dirección de blockchain no se encuentra almacenado en la “billetera cripto”, sino en la red blockchain correspondiente, las credenciales verificables asociadas a un sujeto si se encuentran almacenadas en la “billetera de identidad” y no se recomienda almacenar esta información a nivel de una red blockchain por cuestiones de compliance y seguridad.
+
+Por otro lado, mientras las “billeteras de identidad”, al menos las más sofisticadas, suelen implementar mecanismos que permitan mantener replicada y sincronizada la información relativa a la identidad del sujeto en los distintos dispositivos que este pueda utilizar, las “billeteras cripto” no requieren este tipo de mecanismos, porque las capacidades de replicación y sincronización de la información datos es provista a nivel de las redes blockchain (Ej.: el saldo de una dirección es almacenado en todos los nodos de una red blockchain).
+
+En ambos casos, la información relacionada con el KMS suele sincronizarse en distintos dispositivos haciendo uso de “frases semilla” (seed phrases), a partir de las cuales se puede reconstruir todas la jerarquía de claves privadas, claves públicas y direcciones asociadas a la billetera. 
+
+**Operaciones**
+
+Mientras que las billeteras cripto están orientadas a preparar y firmar transacciones que serán procesadas por una red blockchain, las billeteras de identidad están orientadas a preparar y firmar credenciales o pruebas que serán intercambiadas en forma peer-to-peer entre los actores involucrados.
+
+Mientras las operaciones que se ejecutan desde billeteras cripto son típicamente públicas y, por lo tanto, conocidas por todos aquellos que tengan acceso a un nodo de la red, las operaciones que se ejecutan desde billeteras de identidad siempre son totalmente privadas y solo conocidas por las partes involucradas.   
+
+**Comunicaciones** 
+
+Las billeteras cripto típicamente no implementan un esquema de comunicaciones entre las partes involucradas en cada transacción dado que las transacciones se llevan a cabo con la intermediación de la red blockchain que utilicen en cada caso. 
+
+En el caso de las “billeteras de identidad”, las operaciones en sí mismas son realizadas de forma peer-to-peer pura, sin intermediación de ningún tipo, lo cual exige la implementación de protocolos de comunicación del tipo peer-to-peer y mecanismos de discovery y ruteo de mensajes entre las partes. 
+
+Es importante aclarar que, excepcionalmente, algunas billeteras cripto implementan esquemas de comunicación entre partes, pero estos no se utilizan para procesar la operación en sí misma, sino para intercambiar información que necesaria para preparar una operación que será procesada a través de una red blockchain (Ej.: intercambiar la dirección y el montos a transferir). Adicionalmente, dado que se implementan con mecanismos propietarios, estos mecanismos sólo son aplicables si ambas partes utilizan la misma billetera.
 
 ## Glosario
 
