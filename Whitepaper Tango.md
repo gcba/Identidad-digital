@@ -76,9 +76,9 @@ V. 0.1
 
    5.2 [Nivel 2: billeteras y agentes digitales](#52-nivel-2-billeteras-y-agentes-digitales)
       
-   - [Tipos de billeteras en la Web 3.0 ](#tipos-de-billeteras-en-la-web-3.0)
+   - [Tipos de billeteras en la Web 3.0](#tipos-de-billeteras-en-la-web-3.0)
    
-   - [Billeteras y Agentes - terminología relacionada ](#billeteras-y-agentes-terminologia-relacionada)
+   - [Billeteras y Agentes - terminología relacionada](#billeteras-y-agentes-terminologia-relacionada)
    
    - [Billeteras de Identidad - Arquitectura conceptual](#billeteras-de-identidad-arquitectura-conceptual)
    
@@ -343,7 +343,7 @@ Cada una de estas dos opciones tiene sus ventajas y desventajas, que deberán se
 
 Este nivel aborda la problemática de las billeteras y agentes digitales necesarios para aceptar, almacenar e intercambiar credenciales digitales sobre protocolos estándares de comunicación entre pares (P2P). El objetivo de este nivel es crear un espacio seguro y privado para todas las interacciones digitales que puedan ocurrir ya sea entre individuos, empresas, gobiernos o cualquier tipo de "cosa" con la que podamos interactuar digitalmente a través de una billetera/agente digital.
 
-#### **Tipos de billeteras en la Web 3.0**
+#### **Tipos de billeteras en la Web 3.0:**
 
 Las billeteras físicas tradicionalmente se utilizan para almacenar una variedad de activos personales, como efectivo, tarjetas de crédito, licencia de conducir, seguro médico y tarjetas de presentación. En la actualidad, también contamos con una amplia variedad de billeteras digitales para almacenar y acceder a versiones digitales de estos mismos activos, y cada día surgen más opciones en el mercado. Sin embargo, cada billetera representa los datos e implementa sus capacidades de manera diferente, lo cual restringe significativamente la interoperabilidad y en muchos casos genera una dependencia con el proveedor de la wallet.
 
@@ -355,7 +355,7 @@ Si bien ambos tipos de billeteras se utilizan para implementar aplicaciones que 
 
 Dado que Tango se enfoca a la problemática de Identidad Auto Soberana, el término “billetera” se utilizará para referirnos al tipo de billeteras que se utiliza para manejar la problemática de identidad, pero, dado que existe cierta superposición entre las audiencias de Activos Criptográficos e Identidad Auto Soberana, y además porque es posible que en el futuro aparezcan billeteras qué sean capaces de manejar ambos escenarios de uso, en el “Anexo III” de este documento incluimos un breve análisis comparativo de las características fundamentales de cada uno de estos tipos de billeteras.
 
-#### **Billeteras y Agentes - terminología relacionada**
+#### **Billeteras y Agentes - terminología relacionada:**
 
 Dado que no existe total uniformidad respecto de la terminología que es utilizada en las distintas comunidades y proyectos que abordan la problemática de la identidad Auto Soberana, en particular respecto del significado de los términos Billetera y Agente, definiremos en esta sección lo que entendemos por cada uno de esos términos dentro del proyecto Tango.
 
@@ -365,17 +365,17 @@ Agente: un agente es un módulo de software que actúa como representante de un 
 
 Billetera de Identidad: dentro del contexto de Tango utilizaremos este término para referirnos a la entidad lógica que combina todas las capacidades que tienen las billeteras y los agentes según las definiciones dadas en los dos párrafos anteriores. Esta entidad es en definitiva la que utilizan los distintos sujetos – individuos, organizaciones o cosas – para ejecutar las distintas operaciones relacionadas con su identidad Auto Soberana.   
 
-#### **Billeteras de Identidad - Arquitectura conceptual**
+#### **Billeteras de Identidad - Arquitectura conceptual:**
 
 En esta sección se describen los principales componentes que a nuestro criterio deben incorporarse a la arquitectura de una Wallet de Identidad, el cual trata de sintetizar y homogeneizar las descripciones y la terminología que utilizan distintos grupos y proyectos que abordan este tema como parte de la problemática de Identidad Auto Soberana. Para esto, dado que no existe total acuerdo ni en los componentes, ni en la terminología utilizada para describir la arquitectura de una Billetera de Identidad en dichos grupos y proyectos, hemos tomado como base las especificaciones que se están siendo desarrolladas por el W3C y la Decentralized Identity Foundation y las complementamos con elementos que provienen de los otros grupos o proyectos y que consideramos valiosos y complementarios.  
 
-#### **Key Management Service (KMS)**
+#### **Key Management Service (KMS):**
 
 Esta es la capacidad más básica y fundamental en una Billetera de Identidad, dado que es la que permite generar y almacenar pares de claves públicas y privadas, proteger las claves privadas y firmar digitalmente utilizando diversidad de algoritmos criptográficos. En algunos casos además puede soportar esquemas de múltiples firmas, normalmente conocidos como “multisig”. 
 
 Esta capacidad se implementa de manera muy similar en las Billeteras de Identidad y en las billeteras utilizadas para las aplicaciones de manejo de activos digitales (Ej.: criptomonedas), al punto tal que muchas implementaciones se realizan utilizando las mismas primitivas y librerías criptográficas, e incluso ciertas “Billeteras Cripto” pueden utilizarse para cubrir estas necesidades dentro de una Billetera de Identidad. Por ejemplo: las llamadas billeteras de hardware o billeteras como Metamask podrían ser utilizadas para implementar esta capacidad dentro de una Billetera de Identidad.  
 
-#### **Confidential Storage**
+#### **Confidential Storage:**
 
 Un Almacenamiento Confidencial, tal como lo define el borrador de la especificación de confidential storage que está siendo elaborada por la Decentralized Identity Foundation, es un mecanismo diseñado poniendo especial énfasis en la privacidad de la información y que permite almacenar, indexar y recuperar datos cifrados en un proveedor de almacenamiento de forma tal que dicho proveedor de almacenamiento no pueda ver, analizar, agregar o revender esos datos. Adicionalmente garantiza que los datos sean portátiles y estén protegidos contra violaciones de datos (data breaches) que pueda sufrir el proveedor de almacenamiento.
 
@@ -383,7 +383,7 @@ Dicha especificación se limita a detallar los requerimientos para este componen
 
 Típicamente, el acceso a un “confidential storage” se realiza a través de uno o varios  “Nodos Web Descentralizados” (aka: Identity Hubs), otro componente clave en la arquitectura de una Billetera de Identidad y que será descrito más adelante en este documento.
 
-#### **DIDComm Messaging**
+#### **DIDComm Messaging:**
 
 Si bien en la actualidad ya existen mecanismos robustos para realizar comunicaciones seguras, todos ellos dependen de construcciones centralizadas, en su mayoría están ligados a un transporte específico y fueron diseñados para cubrir los requerimientos de la web 2.0, donde se asume que las interacciones entre partes son facilitadas a través de servidores web altamente disponibles y operados por expertos, que a la vez imponen términos y condiciones que no son compatibles con los requerimientos de privacidad, interoperabilidad e independencia que plantea la web 3.0. 
 
@@ -393,7 +393,7 @@ El propósito de DIDComm es proveer un nuevo mecanismo de comunicaciones seguras
 
 Actualmente ya está disponible la versión 2 de la especificacón del protocolo DIDComm, existe una buena diversidad de librerías que la implementan y un muy alto nivel de adopción en proyectos de Identidad Auto Soberana alrededor del mundo, lo cual lo ha convertido en un estándar de facto para cubrir los requerimientos de comunicaciones entre pares propios de la WEB 3.0.   
 
-#### **Nodo web descentralizado (DWN)**
+#### **Nodo web descentralizado (DWN):**
 
 Un “Nodo Web Descentralizado” (aka: “Identity Hub”), también conocido como DWN, por sus siglas en inglés, es un mecanismo que facilita la transmisión de mensajes en modalidad peer-to-peer entre sujetos – ya sean individuos, organizaciones y cosas – así como también la gestión del almacenamiento de datos públicos o privados relacionados con un identificador descentralizado (DID) dado.
 
@@ -403,13 +403,13 @@ Es importante destacar que el DWN no realiza la transmisión de los mensajes, ni
 
 El DWN es particularmente importante en el caso de individuos o cosas, dado que típicamente no cuentan con una presencia on-line permanente en la web que les permita recibir interacciones iniciadas desde otros DWN, propios o de terceros. Por ejemplo: un individuo que sólo utiliza una Billetera de Identidad en un dispositivo móvil no podría ser contactado en forma directa desde otro sujeto que requiera iniciar un flujo peer-to-peer para intercambiar credenciales con el. Para mayores detalles sobre este tipo de interacciones, puede consultarse la sección “topology” en el borrador de la especificación de DWN que está siendo desarrollada por el Decentralized Identity Foundation.         
 
-#### **Billeteras individuales vs organizacionales**
+#### **Billeteras individuales vs organizacionales:**
 
-#### **Custodial vs Non-custodial**
+#### **Custodial vs Non-custodial:**
 
-#### **Recuperación de identidad**
+#### **Recuperación de identidad:**
 
-#### **Buenas prácticas de seguridad**
+#### **Buenas prácticas de seguridad:**
 
 ### 5.3. Nivel 3: intercambio y verificación de credenciales
 
