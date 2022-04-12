@@ -74,11 +74,11 @@ V. 0.1
 
    - [Temas a profundizar en la fase de co-creación del whitepaper:](#temas-a-profundizar-en-la-fase-de-co-creación-del-whitepaper)
 
-     5.2 [Nivel 2: billeteras y agentes digitales](#52-nivel-2-billeteras-y-agentes-digitales)
+   5.2 [Nivel 2: billeteras y agentes digitales](#52-nivel-2-billeteras-y-agentes-digitales)
 
-     5.3 [Nivel 3: intercambio y verificación de credenciales](#53-nivel-3-intercambio-y-verificación-de-credenciales)
+   5.3 [Nivel 3: intercambio y verificación de credenciales](#53-nivel-3-intercambio-y-verificación-de-credenciales)
 
-     5.4 [Nivel 4: aplicaciones](#54-nivel-4-aplicaciones)
+   5.4 [Nivel 4: aplicaciones](#54-nivel-4-aplicaciones)
 
 6. **[Estrategia de Adopción](#6-estrategia-de-adopción)**
 
