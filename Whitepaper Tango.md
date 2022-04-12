@@ -100,7 +100,7 @@ V. 0.1
 
 - **[Anexo II](#anexo-ii)**
 
-- **[Anexo III](#anexo-iii)**
+- **[Anexo III - Billeteras Cripto vs Billeteras de Identidad](#anexo-iii-billeteras-cripto-vs-billeteras-de-identidad)**
 
 - **[Glosario](#glosario)**
 
@@ -475,9 +475,7 @@ Mapeo de principios de diseño contra los 10 principios para la identidad auto-g
 | MINIMALIZACIÓN                                   | _Selective Disclosure_                                |
 | PROTECCIÓN                                       | Estándares de seguridad                               |
 
-## Anexo III
-
-## Billeteras Cripto vs Billeteras de Identidad
+## Anexo III - Billeteras Cripto vs Billeteras de Identidad
 
 Como se mencionó anteriormente en este documento, en el contexto de la Web 3.0 existen dos tipos de billeteras que resultan relevantes:  
 
