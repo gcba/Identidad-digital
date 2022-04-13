@@ -552,7 +552,7 @@ Es importante aclarar que, excepcionalmente, algunas billeteras cripto implement
 - Nodo:
 - ZKP:
 - Bootstrapping:
-- W3C:
+- W3C: hace referencia a World Wide Web Consortium (W3C), es un consorcio internacional en el que las organizaciones miembros, el personal a tiempo completo y el público en general trabajan juntos para desarrollar normas y directrices web diseñadas para garantizar el crecimiento a largo plazo de la web.
 - HYPERLEDGER:
 - Ethereum:
 - SSI:
