@@ -547,7 +547,28 @@ Es importante aclarar que, excepcionalmente, algunas billeteras cripto implement
 
 ## Glosario
 
-_A COMPLETAR_
+- Protocolo:
+- Blockchain:
+- Nodo:
+- ZKP:
+- Bootstrapping:
+- W3C:
+- HYPERLEDGER:
+- Ethereum:
+- SSI:
+- DID:
+- Credencial:
+- EVM:
+- IPFS:
+- ETHR:
+- Sidetree:
+- WEB3:
+- Criptomoneda:
+- NFT:
+- Agente:
+- Multisig:
+- DWN:
+- Topología:
 
 [^1]: Nombre sujeto a discusión con la comunidad.
 
