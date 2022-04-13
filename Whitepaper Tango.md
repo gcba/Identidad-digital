@@ -558,8 +558,8 @@ Es importante aclarar que, excepcionalmente, algunas billeteras cripto implement
 - SSI:
 - DID:
 - Credencial:
-- EVM:
-- IPFS:
+- EVM: hace referencia a Ethereum Virtual Machine o Máquina virtual de Ethereum.
+- IPFS: hace referencia a InterPlanetary File System, un sistema de archivo descentralizado que busca garantizar la seguridad, privacidad y resistencia a la censura de los datos.
 - ETHR:
 - Sidetree:
 - WEB3:
