@@ -91,6 +91,14 @@ V. 0.1
    - [Buenas prácticas de seguridad](#buenas-practicas-de-seguridad)
 
    5.3 [Nivel 3: intercambio y verificación de credenciales](#53-nivel-3-intercambio-y-verificación-de-credenciales)
+   
+   - [Credenciales Verificables, modelo de datos](#credenciales-verificables-modelo-de-datos)
+
+   - [Intercambio de Credenciales](#intercambio-de-credenciales)
+
+   - [Tango VC](#tango-vc)
+
+   - [Otros Temas a abordar en esta sección](#otros-temas-a-abordar-en-esta-seccion)
 
    5.4 [Nivel 4: aplicaciones](#54-nivel-4-aplicaciones)
 
@@ -419,13 +427,104 @@ El DWN es particularmente importante en el caso de individuos o cosas, dado que 
 
 ### 5.3. Nivel 3: intercambio y verificación de credenciales
 
-Este nivel facilita el intercambio de credenciales verificables y pruebas criptográficas entre emisores, titulares y verificadores, apoyándose en protocolos estándar de intercambio de credenciales y el modelo del [triángulo de confianza de las credenciales verificables](https://trustoverip.github.io/WP0010-toip-foundation-whitepaper/trust/vcred_trust_triangle/), que permite establecer relaciones de confianza transitiva entre cualquiera de las tres partes para sus interacciones por canales digitales, de forma interoperable y a escala global.
+El nivel tres del modelo de ToIP habilita un marco de “confianza humana” – en forma de afirmaciones verificables acerca de entidades, atributos y relaciones – el cual complementa al marco de “confianza criptográfica” habilitado por los niveles uno y dos. El nivel cuatro, como veremos más adelante, extiende y complementa este marco de “confianza humana” con los modelos y políticas de confianza propias y específicas de cada ecosistema de confianza digital.
 
-Temas a abordar:
+Para lograr su propósito, este nivel facilita el intercambio de credenciales verificables y pruebas criptográficas entre emisores, titulares y verificadores, apoyándose en los formatos de intercambio de datos, protocolos de credenciales verificables y el modelo del [triángulo de confianza de las credenciales verificables](https://trustoverip.github.io/WP0010-toip-foundation-whitepaper/trust/vcred_trust_triangle/), lo cual permite establecer relaciones de confianza transitivas para las interacciones por canales digitales, de forma interoperable y a escala global entre cualquiera de los tres actores que define dicho modelo: emisores, titulares y verificadores.
 
-- Credenciales vs NFTs
-- Selective disclosure
-- Recuperación de identidad
+El “modelo de confianza” descrito en la especificación “[Verifiable Credentials Data Model v1.1](https://www.w3.org/TR/vc-data-model/#trust-model)” enumera los supuestos acerca de las relaciones de confianza que se asumen como válidas entre los distintos actores y que dan sustento al modelo como tal. Por ejemplo: “el verificador confía en el emisor de una credencial”.
+
+#### **Credenciales Verificables, modelo de datos **
+
+El [modelo de datos de VC](https://www.w3.org/TR/vc-data-model/), definido por el W3C, es un formato de datos universal que permite que cualquier entidad realice “afirmaciones verificables” (Verifiable Claims) sobre otra entidad, para describir una cualidad o cualidades, propiedad o propiedades que establecen la existencia y unicidad de la entidad sobre la cual se realizan dichas afirmaciones.
+
+El objetivo fundamental del estándar de Credenciales Verificables es habilitar el equivalente digital de las credenciales físicas que almacenamos en nuestras billeteras físicas y que utilizamos en el día a día para proporcionar prueba de nuestra identidad y/o de nuestros atributos.
+
+El modelo de datos de VC, proporciona un mecanismo común para la implementación interoperable de credenciales digitales que son criptográficamente seguras, a prueba de manipulaciones, respetuosas de la privacidad y verificables por mecanismos digitales. Este modelo permite empaquetar credenciales, firmarlas criptográficamente y generar pruebas criptográficas asociadas de forma estandarizada. Esto habilita la creación de  ecosistemas que comparten juegos de credenciales interoperables que pueden ser procesadas y comprendidas por sistemas dispares dentro del ecosistema.
+
+A continuación se enumeran los actores y las principales entidades dentro del modelo de Credenciales Verificables, tal como las define la especificación “[Verifiable Credentials Data Model v1.1](https://www.w3.org/TR/vc-data-model)” del W3C.
+
+Sujeto: es una entidad sobre la cual se hacen afirmaciones (claims). Los sujetos pueden ser personas u organizaciones, pero también animales, cosas e incluso conceptos. Un individuo, una empresa, un auto o un animal son ejemplos de sujetos. El titular (holder) de una credencial verificable puede o no ser el sujeto de dicha credencial. Por ejemplo: un padre (el titular o holder) puede tener las credenciales verificables de su hijo (el sujeto), o el dueño de una mascota (el titular o holder) puede tener las credenciales verificables de su mascota (el sujeto).
+
+Titular (holder): un rol que un sujeto desempeña cuando posee una o más credenciales verificables y generar presentaciones verificables a partir de ellas.
+
+Emisor (issuer): un rol  que desempeña una entidad que realiza afirmaciones (claims) sobre uno o más sujetos, que crea credenciales verificables a partir de estas afirmaciones y que transmite dichas credenciales a sus titulares. Los emisores, por ejemplo, pueden ser: empresas, organizaciones sin fines de lucro, asociaciones comerciales, gobiernos e incluso individuos.
+
+Verificador: un rol que realiza una entidad al recibir una o más credenciales verificables, opcionalmente dentro de una presentación verificable, para su procesamiento. Los verificadores pueden ser, por ejemplo: empleadores, personal de seguridad, sitios web o individuos.
+
+Afirmación (Claim): representa una calificación, logro, cualidad o información sobre los antecedentes de un sujeto, como ser, por ejemplo, un nombre, una identificación gubernamental, una dirección particular o un título universitario. Un sujeto puede ser un individuo, una organización o una cosa.
+
+Credenciales: es un conjunto de una o más afirmaciones (claims) realizadas por la misma entidad respecto del mismo sujeto. También pueden incluir un identificador y metadatos para describir las propiedades de la credencial en sí misma, como el emisor, la fecha y hora de vencimiento, una imagen representativa, una clave pública para usar con fines de verificación, el mecanismo de revocación, etc.
+
+Credenciales Verificables: es una credencial, tal como se definió en el párrafo anterior, pero que incluye material criptográfico que permite detectar la manipulación de sus datos y probar fehacientemente quién la emitió.
+
+Presentaciones Verificables: contienen datos de una o más credenciales verificables empaquetados de tal manera que la autoría y la integridad de los datos es verificable. También pueden estar conformados por datos que son derivados de credenciales verificables cuya validez y autoría pueden ser verificadas criptográficamente, generalmente utilizando algoritmos de Zero Knowledge Proofs. Los datos de una presentación a menudo tratan sobre el mismo sujeto, pero pueden haber sido emitidos por varios emisores. Las presentaciones verificables deben incluir una prueba criptográfica, típicamente una firma digital, que permita verificar que quien está realizando la presentación es el titular de la credencial (holder).
+
+Registro de datos verificables: un sistema que media en la creación y verificación de identificadores, claves y otros datos relevantes – como esquemas de credenciales verificables, registros de revocación, claves públicas de emisores, etc – que podrían ser necesarios para usar credenciales verificables. Estos registros pueden ser implementados utilizando tecnologías de registros descentralizados (Ej.: blockchain), pero esto no es mandatorio, también podrían ser implementados utilizando tecnologías centralizadas.
+
+##### **Tipos de Credenciales Verificables**
+
+Esta sección presenta las diferentes variantes de Verificables Credentials (VC) que describe la especificación “Verifiable Credentials Data Model v1.1” del W3C. También explica brevemente sus diferencias y presenta el trilema de interoperabilidad que surge debido a la existencia de tres opciones diferentes de VCs. Finalmente, recomienda la adopción del formato de VC más nuevo dado que este apunta a satisfacer los requerimientos de un mayor número de partes interesadas.
+
+¿Por qué importa esto? Sin la convergencia a un formato de VC estandarizado, no habrá interoperabilidad funcional en todo el ecosistema. Si los creadores de aplicaciones implementan la criptografía relacionada con las VC utilizando bibliotecas y métodos incompatibles, y los datos subyacentes tienen distintas propiedades de legibilidad, no se logrará la interoperabilidad.
+
+Lo que tienen en común los diferentes métodos es que los emisores los usan para empaquetar “claims” sobre un sujeto. La entidad emisora luego usa criptografía para sellar la credencial y este sello proporciona un mecanismo para que otras entidades (los verificadores) verifiquen las firmas criptográficas para ver si la credencial tiene integridad en función de las claves públicas del emisor.
+
+En lo que se diferencian es en los formatos que utilizan para los “claims” dentro de las credenciales y las presentaciones verificables, así como también en tipo de pruebas (proofs) que utilizan para sellar las credenciales y/o las presentaciones verificables.
+
+A continuación se presentan las tres variantes de VC que se describen en la especificación “Verifiable Credentials Data Model v1.1” del W3C. Todas tienen más de una implementación crítica en varias etapas de producción.
+
+JSON-LD
+
+Esta variante utiliza un formato basado en JSON-LD asegurado con “Linked Data Signatures” o firmas BBS+ para habilitar Zero Knowledge Proofs (ZKP) y es impulsada mayormente por el ecosistema que impulsa el paradigma de Linked Data y Semantic Web. La variante que combina JSON-LD ZKP con BBS+ está ganando mucha popularidad, dado que habilita una forma de usar JSON-LD con capacidades de ZKP, cosa que no era posible antes de la aparición de BBS+. El beneficio de usar este enfoque es, ante todo, que cumple totalmente con la especificación de VC tal como existe en la actualidad. Además, debido a que sus firmas y pruebas son autodescriptivas y autocontenidas, no requieren ninguna configuración adicional ni dependencias externas. Este enfoque permite el uso simple y estandarizado de JSON-LD, para aprovechar los vocabularios de datos abiertos, y al mismo tiempo conserva las características de preservación de la privacidad, como Selective Disclosure o ZKP, los que tradicionalmente venían con su propio conjunto de limitaciones y concesiones. Con esta variante ya no es necesario elegir entre la interoperabilidad basada en estándares o la criptografía que preserva la privacidad: se pueden tener ambas.
+
+JWT
+
+Esta variante utiliza un formato JSON asegurado con JSON Web Signatures, específicamente en forma de JSON Web Tokens (JWT) y es impulsada mayormente desde el ecosistema de proveedores de soluciones para Identity and Access Management (IAM). Este ecosistema tiende a visualizar al “login” como la base del protocolo de intercambio de VC y apunta a realizar una implementación reutilizando el stack de tecnología que usan actualmente: JSON Object Signing and Encryption (JOSE) y OpenID Connect. Claramente es una opción muy robusta para implementar el caso de uso de Login a sitios web utilizando Self-Sovereign-Identity como proveedor de identidad, pero no es la opción más apropiada para otros escenarios de uso más propios de la Web 3.0.  
+
+ZKP-CL
+
+Esta variante utiliza ZKP con firmas del tipo Camenisch-Lysyanskaya (ZKP-CL). Dado que es un formato que está íntimamente relacionado con Hyper Ledger Indy, no será considerado dentro del proyecto Tango porque este busca ser agnóstico respecto de la red Blockchain que utilice como anclaje. 
+
+#### **Intercambio de credenciales**
+
+La forma en que los “agentes” de los emisores, los titulares y los verificadores deben realizar el intercambio de credenciales entre sí es otra de las características que define el modelo ToIP en el nivel tres con el objetivo de habilitar la interoperabilidad funcional a través de todo el ecosistema.
+
+Dado que existen múltiples especificaciones que abordan los distintos aspectos de la problemática del intercambio de credenciales verificables y, en algunos casos, existe más de una aproximación para resolver un mismo aspecto, en esta sección se describen brevemente los distintos aspectos que abordan dichas especificaciones y se propone una alternativa para aquellos casos donde existan divergencias en la comunidad sobre cómo implementar un aspecto en particular.
+
+Intercambio de Presentaciones
+
+El problema más básico para lograr la interoperabilidad en el intercambio de credenciales es definir un mecanismo estándar para facilitar los dos pasos principales en un intercambio de este estilo: una forma para que los “verificadores” describan los requisitos de prueba y para que los “titulares” (holders) describan las presentaciones de prueba alineadas con dichos requisitos.
+
+Para abordar estas necesidades, la especificación “[Presentation Exchange v1.0.0](https://identity.foundation/presentation-exchange/spec/v1.0.0/)” define un protocolo de intercambio de datos que consta de dos un dos formatos de datos: “Definición de Presentación” o “Presentation Definition” y “Envío de Presentación” o  “Presentation Submission”.
+
+La “Definición de Presentación” es el formato de datos que utilizan los “verificadores” para para articular los requisitos de prueba que deben ser cumplidos por los “titulares” (holders). Entre otras cosas, este formato define el tipo de credenciales que son requeridas y las opciones que son aceptadas para cada tipo (Ej.: se requiere presentar un documento de identidad y las opciones válidas son, un pasaporte, un DNI y una licencia de conducir). Adicionalmente, este formato de datos define las características de encoding y el tipo de algoritmos criptográficos que soporta el verificador.
+
+El “Envío de Presentación” es el formato de datos que utilizan los “titulares” (holders) para describir las pruebas que están enviando, las cuales obviamente deben estar alineadas y deben cumplir con los requisitos especificados por los verificadores en la “Definición de la presentación”.
+
+La especificación “Presentation Exchange v1.0.0” está diseñada para ser agnóstica respecto de los distintos tipos de credenciales verificables y también de los sobres de transporte (transport envelope) que típicamente se asocian con cada tipo de credencial verificable. Esto implica que un implementador puede usar JSON Web Tokens (JWTs), Verifiable Credentials (VCs), JWT-VCs o cualquier otro formato claims, y transmitirlos a través de Open ID Connect, DIDComm, Credential Handler API o cualquier otro sobre de transporte.
+
+Adicionalmente, esta especificación no define protocolos de transporte, end-points específicos u otros medios para transmitir los objetos formateados que define, para que otras especificaciones y proyectos que definen dichos mecanismos puedan utilizar dentro de sus flujos los formatos de datos definidos en esta especificación.
+
+##### **Wallet and Credential Interactions (WACI)**
+
+A diferencia de la especificación “Presentation Exchange v1.0.0”, descrita en la sección anterior, el borrador de la especificación “Wallet And Credential Interactions” proporciona una definición completa de un protocolo para cubrir los distintos aspectos necesarios para implementar las dos interacciones principales (emisión y presentación) que son requeridas en el ciclo de vida de las credenciales verificables.
+
+Dicha especificación incorpora los formatos de datos definidos por la especificación “Presentation Exchange v1.0.0” y los complementa con elementos que incorpora de una serie de otras especificaciones y protocolos existentes, sin asumir ni requerir que un implementador los entienda todos y de esta forma lo abstrae toda esa complejidad. Hereda su estructura general del borrador inicial de WACI, pero utiliza elementos del protocolo de mensajería DIDComm v2.0  junto con formatos de mensaje de “Aries Present Proof” y los objetos de datos de DIF “Presentation Exchange v1.0.0”. Esta versión de la especificación también se restringe al tipo de credenciales verificables que utilizan BBS+ y LD-Signatures.
+
+#### **Tango VC**
+
+En función de lo expresado en las secciones anteriores de este capítulo y los requerimientos, la implementación del nivel tres del modelo de ToIP en el proyecto Tango se realizará utilizando inicialmente el esquema de credenciales JSON-LD asegurado con firmas BBS+ y un esquema de intercambio de credenciales basado en la especificación WACI, dado que es el modelo que más se adapta a las necesidades presentes y futuras del proyecto, a los distintos escenarios de uso y flujos de proceso requeridos y al paradigma de la Web 3.0, pero además porque es el que logra el mayor apalancamiento con las capacidades implementadas en los niveles uno y dos del modelo.
+
+Esta aproximación permitirá, entre otras cosas, implementar funcionalidades muy sofisticadas, como Selective Disclosure y ZKP con un mínimo esfuerzo, sin tener que realizar concesiones en cuanto a experiencia de usuario o introducir requerimientos que podrían elevar la barrera de entrada a los usuarios y otros actores del ecosistema.
+
+Eventualmente, para tener compatibilidad hacia atrás con aplicaciones de la Web 2.0 que utilicen mecanismos de Identidad Federada, específicamente para escenarios de Login con SSI, se podría evaluar la implementación adicional de un esquema de credenciales basado en JWT y un esquema de intercambio de credenciales basado en el stack tecnológico de Open ID Connect y JOSE.
+
+#### **Otros Temas a abordar en esta sección**
+
+-Credenciales vs NFTs
+-Selective disclosure
+-Recuperación de identidad
+
 
 ### 5.4. Nivel 4: aplicaciones
 
