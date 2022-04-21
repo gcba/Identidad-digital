@@ -528,10 +528,12 @@ Eventualmente, para tener compatibilidad hacia atrás con aplicaciones de la Web
 
 ### 5.4. Nivel 4: aplicaciones
 
-Nivel 4: ecosistemas de confianza digital facilita el desarrollo de ecosistemas de confianza digital, familias completas de aplicaciones y credenciales que no solo están diseñadas para interoperar técnicamente, sino que además comparten un marco común de gobernanza del ecosistema, lo cual, entre otras cosas, permite definir modelos de información estandarizados para el conjunto de credenciales propio de cada ecosistema, lo cual habilita la interoperabilidad dentro de dichos ecosistemas.
+El nivel cuatro del modelo de ToIP es el que facilita el desarrollo de “ecosistemas de confianza digital”, familias completas de aplicaciones y credenciales que no solo están diseñadas para interoperar técnicamente, sino que además comparten un “marco común de gobernanza del ecosistema”, el cual especifica el propósito, los principios y las políticas que se aplican a todas las autoridades de gobierno y marcos de gobierno que operen en cada uno de los cuatro niveles del stack de ToIP para cada ecosistema. Entre otras cosas, esto permite definir modelos de información estandarizados para el conjunto de credenciales propio de cada ecosistema lo que a su vez habilita la interoperabilidad funcional de extremo-a-extremo dentro de los mismos.
 
-Temas a abordar:
-- Interoperabilidad
+De esta manera, el “triángulo de confianza”, definido e implementado en el nivel 3, evoluciona al “diamante de confianza”, tal como puede verse en la siguiente figura, en la cual: mientras la mitad superior muestra la arquitectura básica del triángulo de confianza utilizada por las credenciales verificables, la mitad inferior muestra un segundo triángulo de confianza, el “triángulo de confianza de gobierno”, que puede resolver una serie de problemas relacionados con la adopción y la escalabilidad en el mundo real de las credenciales verificables y el stack de ToIP.
+
+<img src="/img/diamante.png" alt="El diamante de confianza y la gobernanza digital. Fuente: trustoverip.org"/>
+
 
 Estos principios de arquitectura son los que permitirán cumplir con los 10 principios de identidad auto-soberana (ver [Anexo II](anexo-ii)).
 
