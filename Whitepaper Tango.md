@@ -534,6 +534,19 @@ De esta manera, el “triángulo de confianza”, definido e implementado en el 
 
 <img src="/img/diamante.png" alt="El diamante de confianza y la gobernanza digital. Fuente: trustoverip.org"/>
 
+El triángulo de confianza de gobierno representa el mismo modelo de gobierno que existe para muchas de las credenciales físicas más exitosas que usamos todos los días: pasaportes, licencias de conducir, tarjetas de crédito, tarjetas de seguro médico, etc. Estas credenciales están "respaldadas" por reglas y políticas que en muchos casos han tardado décadas en evolucionar. Estas reglas y políticas han sido desarrolladas, publicadas y aplicadas por muchos tipos diferentes de “autoridades de gobernanza” existentes: empresas privadas, consorcios industriales, redes financieras y, por supuesto, gobiernos. 
+
+El mismo modelo se puede aplicar a las credenciales verificables simplemente haciendo que estas mismas autoridades de gobierno, u otras nuevas formadas explícitamente para el gobierno de ToIP, publiquen “marcos de gobierno digital”. Cualquier grupo de emisores que desee estandarizar, fortalecer y escalar las credenciales que ofrecen pueden unirse bajo los auspicios de una autoridad patrocinadora para elaborar un marco de gobernanza. Cualquiera que sea la forma de la organización — gobierno, consorcio, asociación, cooperativa — el propósito es el mismo: definir las reglas comerciales, legales y técnicas bajo las cuales los miembros de un ecosistema acuerdan operar para lograr la confianza a través de dicho ecosistema.
+
+Con el stack de ToIP, esta arquitectura de gobierno se puede aplicar a cualquier conjunto de roles y/o credenciales, para cualquier ecosistema de confianza digital, de cualquier tamaño y en cualquier jurisdicción.
+
+Hoy Internet es una red de redes, donde las interconexiones entre cada red se facilitan a través del stack de TCP/IP. ToIP habilita la evolución hacia un ecosistema de ecosistemas de confianza digital, donde las interconexiones entre cada uno de estos ecosistemas se facilita a través del stack de ToIP y los límites de cada ecosistema de confianza digital están determinados por los marcos de gobernanza bajo los cuales operan sus miembros.
+
+Esto permite que Internet conserve la misma diversidad y riqueza que tiene hoy en día, pero con una nueva capacidad que permite formar y mantener relaciones de confianza de cualquier tipo – personal, comercial, social, académica, política – y a cualquier distancia. Estas relaciones de confianza pueden traspasar fluir de un ecosistema de confianza a otro de la misma manera como los paquetes IP pueden fluir de una red a otra en la actual Internet.
+
+#### **Tango en Nivel 4**
+
+El primer paso en el hoja de ruta de Tango apunta a desplegar un primer ecosistema y su correspondiente marco de gobernanza alrededor de las credenciales y los casos de uso relacionados con el Gobierno de la Ciudad de Buenos Aires, pero, como se mencionó anteriormente en este documento, esto dejará instalada una infraestructura abierta, descentralizada y no permisionada, que luego podrá ser re-utilizada libremente por otros ecosistemas de confianza digital, para terminar constituyendo un ecosistema de ecosistemas de confianza digital sobre el stack de ToIP. Adicionalmente, la masa crítica que aportará Tango en  esta primera etapa, actuará como una fuerza gravitatoria que estimulará la creación de dichos ecosistemas, creando la retroalimentación necesaria para que el sistema logre la sustentabilidad a largo plazo y total autonomía respecto del Gobierno de la Ciudad de Buenos Aires.   
 
 Estos principios de arquitectura son los que permitirán cumplir con los 10 principios de identidad auto-soberana (ver [Anexo II](anexo-ii)).
 
