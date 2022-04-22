@@ -92,6 +92,12 @@ V. 0.1
    
    - [Buenas prácticas de seguridad](#buenas-practicas-de-seguridad)
 
+   - [Guardianship](#guardianship)
+
+   - [Delegation](#Delegation)
+
+   - [Compliance](#Compliance)
+
    5.3 [Nivel 3: intercambio y verificación de credenciales](#53-nivel-3-intercambio-y-verificación-de-credenciales)
    
    - [Credenciales Verificables, modelo de datos](#credenciales-verificables-modelo-de-datos)
@@ -442,7 +448,17 @@ El DWN es particularmente importante en el caso de individuos o cosas, dado que 
 
 #### **Recuperación de identidad**
 
+- backup and recovery
+
 #### **Buenas prácticas de seguridad**
+
+#### **Guardianship**
+
+#### **Delegation**
+
+#### **Compliance**
+
+Normativas de privacidad: eIDAS, GDRP, entre otras.
 
 ### 5.3. Nivel 3: intercambio y verificación de credenciales
 
