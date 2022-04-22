@@ -685,6 +685,7 @@ Es importante aclarar que, excepcionalmente, algunas billeteras cripto implement
 - Multisig:
 - DWN:
 - Topología:
+- Primitivas: las primitivas criptográficas son los algoritmos de mas bajo nivel, que luego se usan para construir protocolos o funciones de criptografía. Un "[merkle tree](https://en.wikipedia.org/wiki/Merkle_tree)" es un ejemplo donde se ve fácilmente la primitiva y la función.
 
 [^1]: Nombre sujeto a discusión con la comunidad.
 
