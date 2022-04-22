@@ -48,6 +48,8 @@ V. 0.1
    
    3.12 [Encointer](#312-encointer)
 
+   3.13 [Soluciones comerciales](#313-soluciones-comerciales)
+
 4. **[Conceptos de Identidad Auto-Soberana](#4-conceptos-de-identidad-auto-soberana)**
 
    4.1 [Terminología](#_9ak0sa70kj7r)
@@ -225,6 +227,16 @@ _Nota: esta sección hará referencia a trabajos preexistentes que se analizaron
 ### 3.11. [DIDI](https://didi.org.ar/)
 
 ### 3.12. [Encointer](https://encointer.org/) [proof-of-personhood](https://encointer.org/encointer-for-web3/)
+
+### 3.13. Soluciones comerciales
+
+- [Cheqd](https://www.cheqd.io)
+- [Evernym](https://www.evernym.com)
+- [Sovrin](https://sovrin.org)
+- [KILT](https://www.kilt.io)
+- [Veramo](https://veramo.io)
+- [Serto](https://www.serto.id)
+- [ProofSpace](https://www.proofspace.id)
 
 ## 4. Conceptos de Identidad Auto-Soberana
 
