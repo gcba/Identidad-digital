@@ -591,7 +591,88 @@ _Nota: en esta sección se incluirán las definiciones y criterios relevantes pa
 
 ## 7. Gestión y recupero de identidad
 
-_Nota: en esta sección se incluirán las definiciones y criterios relevantes para la gestión de identidades auto soberana como también recupero en el caso de pérdida de control sobre la identidad._
+La expresión “not your keys, not your coins” es muy popular y muy importante en el mundo de las criptomonedas y de los cripto activos. Lo que significa es que si alguien no tiene el control exclusivo sobre sus claves privadas no tiene realmente el control y el poder de decisión sobre dichos valores. 
+
+Dado que la Identidad Digital Auto Soberana puede ser entendida como un tipo de activo digital, cuya implementación además comparte mucho del stack tecnológico y los paradigmas de descentralización que se usan en el mundo de los cripto activos, esta sección explora el concepto antes mencionado, pero aplicado específicamente al “control de la identidad digital auto soberana”. 
+
+### DIDs vs SCIDs
+
+Un “identificador auto-certificable” – “Self-Certifying IDentifier” o SCID – vincula criptográficamente a un identificador con un par de claves pública y privada, de forma tal que: 1) la relación entre el identificador y la clave pública se puede probar de forma determinística, 2)  la clave privada correspondiente se puede usar para demostrar el control sobre él identificador y 3) no es necesario contar con ningún elemento adicional para certificar estas relaciones.
+
+Los cripto activos típicamente utilizan alguna forma de SCIDs para identificar a quien tiene el control de los mismos. Las “direcciones” son la forma más común de SCIDs en redes blockchain que manejan cripto activos. La correspondencia entre una “dirección blockchain” y una “clave pública” se puede probar de forma determinística y, por lo tanto, la clave privada correspondiente se puede usar para demostrar el control sobre la “dirección de blockchain”, todo sin necesidad de contar con ningún elemento adicional para certificar estas relaciones. 
+
+Los DIDs por su parte, son identificadores que comparten con los SCIDs la característica de que el control sobre el identificador puede ser verificado mediante criptografía pero, a diferencia de los SCIDs, los DIDs por lo general requieren de elementos adicionales para realizar esta comprobación (DID Documents y DID Registries). Existen algunos métodos DID que generan DIDs que son SCIDs, pero no es lo más común.     
+
+Si bien los SCIDs, por su característica de “auto-certificación”, son simples de implementar y muy eficientes, por lo general no cumplen con todos los requisitos que impone la problemática de Identidad Auto Soberana. Los DIDs por su parte, imponen cierta complejidad, debido a que requieren de una infraestructura más compleja, pero permiten la implementación de funciones más avanzadas, tales como rotación de claves, esquemas de múltiples firmas o manejo de roles asociados a un DID, todas funcionalidades necesarias para cubrir los requerimientos de Identidad Auto Soberana.  
+
+### DID Document
+
+Para habilitar las funciones avanzadas que se mencionaron en el párrafo anterior, el modelo de DIDs introduce el recurso del “Documento DID” el cual permite especificar la información asociada con un DID que dichas funciones requieren. Entre otras cosas, en estos documentos se pueden incluir múltiples métodos de verificación (Ej.: claves públicas) asociados al DID y los roles en que pueden usarse dichos métodos de verificación. 
+
+Existen dos roles principales principales que se pueden incluir en un DID Document: Controllers y Delegates
+
+#### **Controller**
+
+Este rol permite modificar la información del DID Document en sí mismo. En un DID Document se pueden definir uno o múltiples controllers especificando las claves públicas de cada uno de ellos.
+
+El controller, dado que puede modificar el DID Document y esto incluye la facultad de eliminar o incorporar otros controllers, es quien tiene el control del DID 
+Document y en definitiva del DID. Dicho de otra forma: quien tenga el control sobre la clave privada correspondiente a un controller de un DID Document tiene el control sobre dicho documento y en definitiva sobre el DID.
+
+Cuando se trata de individuos, típicamente el sujeto del DID es a su vez el controller del DID Document, pero hay situaciones donde el controller puede no ser el sujeto del DID. Por ejemplo: los padres de un menor de edad pueden ser los que tienen asignada la facultad de controllers en el DID Document de su hijo.
+
+Cuando un DID identifica a una organización, un animal o una cosa, el o los controllers siempre son individuos autorizados para cumplir este rol. Ejemplo: el dueño de una mascota típicamente aparecerá como controller en el DID Document de la mascota.      
+
+#### **Delegate**
+
+Este rol permite delegar un conjunto específico de funciones a un delegado para que este pueda actuar en representación del sujeto del DID para dichas funciones. Por ejemplo: el sujeto de un DID, a través de su controller, delega en un tercero la facultad de firmar credenciales verificables en su nombre. 
+
+Los delegados sólo pueden ejercer las facultades para las cuales han sido autorizados y no tienen autorización para actualizar el DID Document, por lo que no tienen el control del mismo y por lo tanto no controlan el DID.
+
+### Administración de claves
+
+A continuación se detallan algunas situaciones relacionadas con la administración de claves públicas y privadas asociadas a los DIDs que es necesario considerar en la implementación de una plataforma de Identidad Auto Soberana. 
+
+#### **Rotación de Claves**
+
+La rotación de claves permite modificar los pares de claves públicas y privadas asociadas a los distintos roles definidos en un DID Document. 
+
+La rotación periódica de claves es una buena práctica de seguridad y está orientada a minimizar la posibilidad de que las claves privadas asociadas a alguno de los roles definidos en un DID document se vean comprometidas y puedan ser utilizadas por personas no autorizadas. 
+
+#### **Pérdida y Recuperación del control sobre la Identidad**
+
+Tal como se mencionó en párrafos anteriores, en el contexto de Identidad Auto Soberana, tener el control sobre la identidad es sinónimo de tener el control sobre las claves privadas de los controllers que están especificados en el DID document asociado a un DID. 
+
+Si bien existen muy variados esquemas de recuperación de identidad, todos en definitiva se resumen a una cosa: recuperar el control y acceso exclusivo a las claves privadas de los controllers que están especificados en el DID Document, típicamente ejecutando una rotación de claves en estos roles, por algún mecanismo predefinido en el DID Method. Distintos DID Methods podrían definir distintas aproximaciones para forzar la rotación de claves como parte del mecanismo de recuperación de identidad.
+
+Un aspecto a destacar es que, dado que la rotación de claves no cambia el valor del DID, la asociación entre el DID y las credenciales verificables que hayan sido emitidas para ese DID no se afecta cuando se ejecuta una rotación de claves. Esto implica que no es necesario emitir nuevamente las credenciales verificables de un sujeto si éste recupera su identidad mediante una rotación de claves.
+
+#### **Custodial vs Non-Custodial**
+
+Tal como se mencionó anteriormente, en el contexto de los cripto activos, el tener o no el control exclusivo de las claves privadas normalmente determina si se tiene o no el control de los cripto activos asociados a las direcciones correspondientes.
+
+Alineado con este concepto aparecen dos tipos diferentes de billeteras “custodial” y “non-custodial” y a la vez un gran debate en el mundo crypto respecto de las ventajas y desventajas de cada uno de estos tipos de billeteras. 
+
+En el contexto de Identidad Auto Soberana, tener el control de una identidad implica tener el control de las claves privadas de todos los controllers que están definidos en el DID Document, dado que si se compromete la clave privada de  alguno de ellos un actor malicioso podría utilizarla para cambiar o eliminar los controllers y todos los datos del DID Document, ganando de esta forma el control sobre dicha identidad. 
+
+Adicionalmente, es importante recordar que un DID también puede tener “delegados” que pueden representarlo en situaciones específicas, lo que implica que si se compromete alguna de estas claves privadas, en alguna medida también se compromete el control sobre algún aspecto de la identidad.
+
+Debido a esto, en el contexto de Identidad Auto Soberana los términos “custodial” y “non-custodial” no se relacionan directamente con tener o no tener el control de la Identidad, dado que mantener el control de la identidad implica controlar todas las claves privadas que controlan alguno de sus aspectos, las cuales podrían estar controladas por distintas personas que a su vez podrían estar usando distintos tipos de billeteras para manejar sus claves privadas.      
+
+Aun con estas consideraciones, es importante considerar detenidamente este aspecto en toda implementación de una plataforma de Identidad Auto Soberana, y considerarlo teniendo en cuenta que una implementación de este estilo apunta a ser muy masiva, atraviesa distintos segmentos de usuarios con capacidades y preferencias muy diversas, que deben ser tenidas en cuenta para no generar exclusiones.    
+
+Si bien una billetera “custodial” puede considerarse menos segura que una billetera “non-custodial”, entre otras cosas porque involucra confiar en un tercero, la realidad es que esto depende de la habilidad que tenga cada persona para cumplir con todas las normas de seguridad en una wallet non-custodial. En muchos casos una billetera “custodial” puede representar una opción válida para usuarios que prefieran no cargar con tanta responsabilidad y que privilegien aspectos como la facilidad de uso.
+
+Lo ideal es contar con una variedad de billeteras custodial y non-custodial y que cada usuario pueda optar por la que más se ajuste a sus necesidades. 
+
+#### **Guardianship**
+
+En la medida que la humanidad avanza hacia un mundo cada vez más digital, existe el riesgo de que se aumente la “exclusión digital” de aquellos que no pueden actuar por sí mismos (o totalmente solos) en este nuevo contexto. Este riesgo es particularmente importante en una implementación de Identidades Digitales, dado que privar de acceso a la identidad tiene un impacto muy severo en términos de exclusión y además porque existen muchos casos donde los individuos no pueden valerse por sí solos para acceder a este derecho fundamental.
+
+Los sistemas de Identidad Auto Soberana, en los que el control de una identidad digital se demuestra utilizando credenciales digitales almacenadas en una billetera digital, presentan un desafío adicional. Cómo podemos permitir que todos controlen su identidad digital cuando, por definición, experimentamos etapas de la vida (p. ej., la infancia) y condiciones (p. ej., demencia) en las que la ley y las normas sociales dictan que no podemos ser autosuficientes. Este desafío no se puede resolver con una simple delegación, porque un niño, una persona que vive con demencia o un refugiado sin conexión a Internet no puede delegar algo que no tiene. Tampoco es una simple relación de “controller” con una cosa (por ejemplo, un dron) porque, a diferencia de un dron, un niño adquiere derechos progresivamente y eventualmente se vuelve más autosuficiente. De manera similar, la persona que vive con demencia experimentará un cambio de capacidad con el tiempo.
+
+Debido a eso, los sistemas de identidad necesitan un medio para representar a aquellos que no pueden actuar por sí mismos (o totalmente solos) en el mundo digital. Esta capacidad es la capacidad de Guardianship que debe ser cuidadosamente diseñada e implementada en toda plataforma de Identidad Auto Soberana.
+
+Para más detalles sobre esta problemática, puede consultarse el documento “[On Guardianship in Self-Sovereign Identity](https://sovrin.org/wp-content/uploads/Guardianship-Whitepaper2.pdf)” publicado por la fundación Sovrin. 
 
 ## 8. Gobierno
 
