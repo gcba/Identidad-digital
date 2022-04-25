@@ -12,7 +12,7 @@ V. 0.1
 
 2. **[Introducción](#2-introducción)**
 
-   2.1. [Motivación: cuáles son los problemas en el sistema actual](#21-motivacion-cuales-son-los-problemas-en-el-sistema-actual)
+   2.1 [Motivación: cuáles son los problemas en el sistema actual](#21-motivacion-cuales-son-los-problemas-en-el-sistema-actual)
 
    2.2 [¿Para qué? El propósito / Los beneficios esperados](#22-para-qué-el-propósito--los-beneficios-esperados)
 
