@@ -14,7 +14,7 @@ V. 0.1
 
    2.1 [Motivación: cuáles son los problemas en el sistema actual](#21-motivación-cuáles-son-los-problemas-en-el-sistema-actual)
 
-   2.2 [¿Para qué? El propósito / Los beneficios esperados](#22-para-qué-el-propósito--los-beneficios-esperados)
+   2.2 [Propósito: qué soluciones se proponen](#22-propósito-qué-soluciones-se-proponen)
 
    2.3 [¿Cómo? El enfoque propuesto](#23-cómo-el-enfoque-propuesto)
 
@@ -154,17 +154,29 @@ En este sentido, podemos resaltar los siguientes puntos:
 
 - Sistemas de validación obsoletos: de la mano del problema de la identidad fragmentada, se utilizan procedimientos que requieren la utilización de credenciales o certificaciones en formato físico. Esta situación le impide a las personas realizar transacciones ágiles, ya sea con actores privados como con el sector gubernamental.
 
-### 2.2. ¿Para qué? El propósito / Los beneficios esperados
+### 2.2. Propósito: qué soluciones se proponen
 
-_Nota: esta sección explicará cuál es el propósito del proyecto, poniendo foco en explicar sus impactos y los beneficios que generará en distintas dimensiones._
+Para revertir la situación planteada anteriormente, el nuevo proyecto de identidad digital auto-soberana propone: 
 
-- Empoderar a los individuos y evolucionar hacia un paradigma dónde los individuos y la sociedad son los garantes sociales y no unos pocos entes centralizados. Un ecosistema abierto, confiable, seguro y transparente, montado sobre una arquitectura descentralizada, donde la confianza está respaldada por la red y no por entes centralizados.
+- Contar con todas las credenciales en un mismo lugar, logrando así tener una única identidad para todos los trámites, gestiones y servicios, sin importar la jurisdicción o el lugar de residencia de la persona, para presentarla ante organismos públicos o privados. Esto optimiza los tiempos y reduce los costos transaccionales de las organizaciones. 
 
-- Potenciar las relaciones entre individuos y las instituciones (públicas y privadas) basadas en la confianza, con un resguardo tecnológico respaldado por los mismos usuarios. Al hacerlo se reemplaza un paradigma regido por fronteras y estructuras de control, por uno descentralizado y fluido.
+- Eliminar la necesidad de presentar documentación ante cada transacción, a través de una credencial verificable, autorizada por el ente emisor, que acredite el cumplimiento de una condición por parte del individuo.
 
-- Agilizar los tiempos de transacción al simplificar el proceso de verificación de identidad y cumplimiento de requerimientos, devolviendo así tiempo a las personas y reduciendo costos para las empresas. Eliminar la necesidad de presentar documentación, reemplazandola por una sencilla autorización a un interesado de verificar automáticamente la tenencia de una credencial que acredite el cumplimiento de una condición o acceder a información.
+- Hacer a los individuos garantes sociales de sus credenciales, a través de un ecosistema abierto, confiable, seguro y transparente, montado sobre una arquitectura descentralizada, donde la confianza esté respaldada por la misma red. Es decir, una identidad digital que les otorgue a las personas la propiedad de su información personal, la libertad para elegir quién, cuándo y cómo se accede a sus datos, y la posibilidad de transaccionar con entidades públicas y privadas de una manera más rápida, segura y confiable.
 
-- Habilitar nuevas formas de hacer negocios, compartir información y brindar acceso a servicios y recursos gubernamentales. Quién quiera podrá desarrollar y construir sobre la base ofrecida por este protocolo, abriendo innumerables puertas a nuevos proyectos y metodologías que involucren a la identidad como un factor fundamental.
+#### **Casos de uso**
+
+Para poder graficar las problemáticas planteadas, y sus posibles soluciones con la implementación de la herramienta, podemos citar los siguientes casos de uso:
+
+##### **Caso 1: Presentación de identidad en un Delivery**
+
+Juan compra unas entradas para un espectáculo a través de una página de internet, ésta última, establece que la entrega se realiza a través de una plataforma de delivery.
+
+Actualmente, para recibir el paquete Juan, o la persona que recibe, tiene que presentar el Documento Nacional de Identidad exponiendo toda la información contenida en el mismo. En su defecto puede decir su número de documento al repartidor quien lo ingresa en una plataforma, dejando muchos huecos de seguridad ya que uno puede dar un DNI incorrecto y el repartidor ingresa eso en el sistema. En algunas ocasiones, incluso hasta se debe presentar el medio de pago con el que se efectuó la operación para hacer este proceso “más seguro”.
+
+Con la nueva herramienta de identidad digital auto-soberana, Juan tendría en un mismo lugar (por ejemplo, una billetera virtual) todas sus identificaciones personales, con el que podría recibir las entradas. Para materializar la entrega la empresa presenta un código QR pegado en el paquete, el cual Juan escanea y selecciona su número de DNI para enviar. De esta forma Juan acepta la entrega compartiendo las identificaciones que el QR establece y compartiéndo únicamente la información que él decidió presentar. Esta información la recibe la empresa de delivery y la puede registrar como evidencia. Todo esto sucede en una interacción rápida y sin necesidad de que Juan muestre nada al repartidor. 
+
+La empresa, por su parte recibe la presentación de Juan y puede guardarla en un registro de forma simple, ágil, a través de la infraestructura de blockchain pública, teniendo la oportunidad de integrar su sistema con la tecnología para guardarlo en su propia base de datos.
 
 ### 2.3. ¿Cómo? El enfoque propuesto
 
