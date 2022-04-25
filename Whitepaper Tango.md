@@ -178,7 +178,9 @@ Con la nueva herramienta de identidad digital auto-soberana, Juan tendría en un
 
 La empresa, por su parte recibe la presentación de Juan y puede guardarla en un registro de forma simple, ágil, a través de la infraestructura de blockchain pública, teniendo la oportunidad de integrar su sistema con la tecnología para guardarlo en su propia base de datos.
 
-<img src="/img/caso1.png" alt="Caso de uso 1: delivery"/>
+<p align="center">
+  <img src="/img/caso1.png" alt="Caso de uso 1: delivery"/>
+</p>
 
 ##### **Caso 2: Agilizar trámites presentando credenciales**
 
@@ -190,7 +192,9 @@ Con el nuevo protocolo de identidad digital auto-soberana, María tendría en un
 
 En este caso, la prestadora de salud, que ya cuenta con una credencial digital en una aplicación, puede agregar una opción en esa aplicación para enviarla a la billetera virtual que utiliza blockchain para que María la tenga junto con toda su documentación. Esto evita, entre otras cuestiones, validaciones actuales de códigos que expiran cada 5 minutos.
 
-<img src="/img/caso2.png" alt="Caso de uso 2: credenciales de salud"/>
+<p align="center">
+  <img src="/img/caso2.png" alt="Caso de uso 2: credenciales de salud"/>
+</p>
 
 ##### **Caso 3: Utilizo mi Identidad Digital como firma**
 
@@ -200,7 +204,9 @@ Hoy en día, para que Martín pueda viajar solo, sus padres tienen que solicitar
 
 Con la nueva herramienta de identidad digital auto-soberana, los padres de Martin solo tendrían que generar una autorización prestando su consentimiento y enviarla a un único lugar donde Martín almacena todas sus credenciales (por ejemplo, una billetera virtual) a través de una firma digital. Dichas credenciales incluirían su Partida de Nacimiento, por lo que no sería necesario validar que es hijo de sus padres. Al momento de viajar, Martín ya podría mostrar su autorización desde el celular sin necesidad de presentar ningún papel o formulario. 
 
-<img src="/img/caso3.png" alt="Caso de uso 3: utilizo mi identidad digital como firma"/>
+<p align="center">
+  <img src="/img/caso3.png" alt="Caso de uso 3: utilizo mi identidad digital como firma"/>
+</p>
 
 #### **¿Qué diferencia hay entre la herramienta propuesta y las aplicaciones de perfiles digitales de ciudadanos?**
 
@@ -605,7 +611,10 @@ El nivel cuatro del modelo de ToIP es el que facilita el desarrollo de “ecosis
 
 De esta manera, el “triángulo de confianza”, definido e implementado en el nivel 3, evoluciona al “diamante de confianza”, tal como puede verse en la siguiente figura, en la cual: mientras la mitad superior muestra la arquitectura básica del triángulo de confianza utilizada por las credenciales verificables, la mitad inferior muestra un segundo triángulo de confianza, el “triángulo de confianza de gobierno”, que puede resolver una serie de problemas relacionados con la adopción y la escalabilidad en el mundo real de las credenciales verificables y el stack de ToIP.
 
-<img src="/img/diamante.png" alt="El diamante de confianza y la gobernanza digital. Fuente: trustoverip.org"/>
+<p align="center">
+  <img src="/img/diamante.png" alt="El diamante de confianza y la gobernanza digital. Fuente: trustoverip.org"/>
+</p>
+
 
 El triángulo de confianza de gobierno representa el mismo modelo de gobierno que existe para muchas de las credenciales físicas más exitosas que usamos todos los días: pasaportes, licencias de conducir, tarjetas de crédito, tarjetas de seguro médico, etc. Estas credenciales están "respaldadas" por reglas y políticas que en muchos casos han tardado décadas en evolucionar. Estas reglas y políticas han sido desarrolladas, publicadas y aplicadas por muchos tipos diferentes de “autoridades de gobernanza” existentes: empresas privadas, consorcios industriales, redes financieras y, por supuesto, gobiernos. 
 
