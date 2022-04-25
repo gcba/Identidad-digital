@@ -12,7 +12,7 @@ V. 0.1
 
 2. **[Introducción](#2-introducción)**
 
-   2.1. [¿Por qué? La motivación](#21-por-qué-la-motivación)
+   2.1. [Motivación: cuáles son los problemas en el sistema actual](#21-motivacion-cuales-son-los-problemas-en-el-sistema-actual)
 
    2.2 [¿Para qué? El propósito / Los beneficios esperados](#22-para-qué-el-propósito--los-beneficios-esperados)
 
@@ -142,7 +142,7 @@ Se trata de un nuevo paradigma que va a permitir transacciones más simples y ef
 
 Las siguientes secciones describirán la motivación y el objetivo del proyecto. Utilizando lenguaje llano (no-técnico) se buscará captar la mayor audiencia posible, dando un panorama claro de la dirección y alcance del mismo.
 
-### 2.1. ¿Por qué? La motivación
+### 2.1. Motivación: cuáles son los problemas en el sistema actual
 
 _Nota: esta sección explicará en términos motivacionales el impulso del proyecto, poniendo foco en responder por qué es necesaria esta iniciativa, por qué orientarla al dominio de las identidades digitales, por qué es oportuno hacerla en este momento y por qué debe ser impulsada desde GCBA._
 
