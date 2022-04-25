@@ -178,6 +178,36 @@ Con la nueva herramienta de identidad digital auto-soberana, Juan tendría en un
 
 La empresa, por su parte recibe la presentación de Juan y puede guardarla en un registro de forma simple, ágil, a través de la infraestructura de blockchain pública, teniendo la oportunidad de integrar su sistema con la tecnología para guardarlo en su propia base de datos.
 
+<img src="/img/caso1.png" alt="Caso de uso 1: delivery"/>
+
+##### **Caso 2: Agilizar trámites presentando credenciales**
+
+María tiene que hacer una consulta médica de forma quincenal, donde le realizan unos estudios de chequeo general desde hace varios años. 
+
+Cuando se presenta para hacerse los chequeos, María debe presentar la orden del diagnóstico por parte de su médico junto con su credencial como afiliado de la prestadora de servicios médicos, y su DNI en el establecimiento correspondiente. María tiene una credencial digital de su prestadora, la abre y muestra la pantalla a la recepcionista, quien tiene que ingresar esos datos en su sistema, junto con los datos del DNI.
+
+Con el nuevo protocolo de identidad digital auto-soberana, María tendría en un mismo lugar (por ejemplo, una billetera virtual), su carnet de afiliada vigente, con su DNI. Al llegar a la recepción va a tener un QR donde va a poder enviar digitalmente esa documentación y la recepcionista lo recibe en su estación de trabajo de forma ágil, segura y confidencial porque su sistema está integrado con la plataforma verificadora en blockchain. Sólo tiene que aceptarla y avanzar a los siguientes pasos. 
+
+En este caso, la prestadora de salud, que ya cuenta con una credencial digital en una aplicación, puede agregar una opción en esa aplicación para enviarla a la billetera virtual que utiliza blockchain para que María la tenga junto con toda su documentación. Esto evita, entre otras cuestiones, validaciones actuales de códigos que expiran cada 5 minutos.
+
+<img src="/img/caso2.png" alt="Caso de uso 2: credenciales de salud"/>
+
+##### **Caso 3: Utilizo mi Identidad Digital como firma**
+
+Martín, de 14 años, tiene que viajar a Salta por un motivo escolar y sus padres no pueden acompañarlo, por lo que deben tramitar un permiso. 
+
+Hoy en día, para que Martín pueda viajar solo, sus padres tienen que solicitar el permiso de viaje para menores de edad en ómnibus de larga distancia. Para ello, pueden: presentar la partida de nacimiento de Martín junto con un formulario, previamente descargado de una web de gobierno; o generar una autorización previa, a través de un escribano o autoridad competente. Ambas alternativas requieren tiempo y dinero.
+
+Con la nueva herramienta de identidad digital auto-soberana, los padres de Martin solo tendrían que generar una autorización prestando su consentimiento y enviarla a un único lugar donde Martín almacena todas sus credenciales (por ejemplo, una billetera virtual) a través de una firma digital. Dichas credenciales incluirían su Partida de Nacimiento, por lo que no sería necesario validar que es hijo de sus padres. Al momento de viajar, Martín ya podría mostrar su autorización desde el celular sin necesidad de presentar ningún papel o formulario. 
+
+<img src="/img/caso3.png" alt="Caso de uso 3: utilizo mi identidad digital como firma"/>
+
+#### **¿Qué diferencia hay entre la herramienta propuesta y las aplicaciones de perfiles digitales de ciudadanos?**
+
+En el caso de las aplicaciones y perfiles digitales existentes, los organismos que requieren información de un individuo, deben tener un acuerdo o permiso por parte del Gobierno Nacional, provincial o municipal, y son éstos últimos quienes confieren la información desde sus bases de datos. 
+
+Bajo el mecanismo propuesto, a través de la identidad digital auto-soberana, los organismos emiten a los ciudadanos una credencial verificable en la red descentralizada (blockchain), que busca darle a la persona una extensión de la información que hoy se encuentra centralizada. Esa credencial verificable que se le otorga a los usuarios es información que utiliza y que disponen las personas. Tiene como ventaja que, comparando con los servidores o aplicaciones de perfiles digitales existentes, si éstos últimos se caen o colapsan, las credenciales verificables a través de la identidad digital auto-soberana de los usuarios se podrán seguir utilizando libremente, ya que se encuentra descentralizada en otros dispositivos.
+
 ### 2.3. ¿Cómo? El enfoque propuesto
 
 _Nota: esta sección explicará cómo se desarrollará y ejecutará el proyecto. El foco no estará puesto en las herramientas específicas a utilizar sino en las metodologías, protocolos y estándares a implementar._
