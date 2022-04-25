@@ -12,7 +12,7 @@ V. 0.1
 
 2. **[Introducción](#2-introducción)**
 
-   2.1 [Motivación: cuáles son los problemas en el sistema actual](#21-motivacion-cuales-son-los-problemas-en-el-sistema-actual)
+   2.1 [Motivación: cuáles son los problemas en el sistema actual](#21-motivación-cuáles-son-los-problemas-en-el-sistema-actual)
 
    2.2 [¿Para qué? El propósito / Los beneficios esperados](#22-para-qué-el-propósito--los-beneficios-esperados)
 
@@ -142,7 +142,7 @@ Se trata de un nuevo paradigma que va a permitir transacciones más simples y ef
 
 Las siguientes secciones describirán la motivación y el objetivo del proyecto. Utilizando lenguaje llano (no-técnico) se buscará captar la mayor audiencia posible, dando un panorama claro de la dirección y alcance del mismo.
 
-### 2.1 Motivación: cuáles son los problemas en el sistema actual
+### 2.1. Motivación: cuáles son los problemas en el sistema actual
 
 Para poder comprender mejor la necesidad de avanzar en una nueva herramienta, resulta fundamental identificar los problemas que actualmente existen en relación a los entes que guardan la información y la complejidad que tienen los individuos para acceder a ella. 
 
