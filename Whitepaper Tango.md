@@ -276,6 +276,8 @@ Según Sovrin, "identidad auto-soberana (Self-sovereign identity o SSI por sus s
 
 #### **Credencial verificable**
 
+Las credenciales verificables son acreditaciones digitales que certifican de manera segura que una persona es portadora de ciertos atributos que tienen que ver con su identidad. Estas pueden ser: documento nacional de identidad, datos de contacto (mail, teléfono, dirección), un certificado educativo o laboral, un registro financiero, un título de propiedad, etc. [Referencia](https://didi.org.ar/aidi-identidad-digital-auto-soberana/#:~:text=Las%20credenciales%20verificables%20son%20acreditaciones,que%20ver%20con%20su%20identidad.)
+
 #### **Identificador descentralizado o DID**
 
 Un identificador persistente y globalmente único que no requiere una autoridad de registro centralizada porque se genera y/o registra utilizando plataformas descentralizadas (Ej.: blockchain). Mientras el formato genérico de un DID se define en la especificación [DID-CORE](https://www.w3.org/TR/did-core/) del W3C, cada DID Method en particular define sus esquemas DID específicos. ![](RackMultipart20220326-4-1cj7fwj_html_c12c0dce6bb476cd.png)
