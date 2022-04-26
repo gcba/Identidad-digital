@@ -86,7 +86,7 @@ V. 0.1
 
    - [Tango VC](#tango-vc)
 
-   - [Otros Temas a abordar en esta sección](#otros-temas-a-abordar-en-esta-seccion)
+   - [Otros temas a abordar en esta sección](#otros-temas-a-abordar-en-esta-sección)
 
    5.4 [Nivel 4: aplicaciones](#54-nivel-4-aplicaciones)
 
@@ -587,12 +587,21 @@ Esta aproximación permitirá, entre otras cosas, implementar funcionalidades mu
 
 Eventualmente, para tener compatibilidad hacia atrás con aplicaciones de la Web 2.0 que utilicen mecanismos de Identidad Federada, específicamente para escenarios de Login con SSI, se podría evaluar la implementación adicional de un esquema de credenciales basado en JWT y un esquema de intercambio de credenciales basado en el stack tecnológico de Open ID Connect y JOSE.
 
-#### **Otros Temas a abordar en esta sección**
+#### **Otros temas a abordar en esta sección**
 
 -Credenciales vs NFTs
+
 -Selective disclosure
+
 -Recuperación de identidad
 
+- Guardianship
+
+- Delegación
+
+- Social recovery
+
+- Multi device recovery
 
 ### 5.4. Nivel 4: aplicaciones
 
