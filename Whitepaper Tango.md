@@ -364,6 +364,8 @@ En este componente, es donde serán registrados los métodos DID soportados por 
 
 Este método tiene la particularidad de que no requiere un [Registro de Datos Verificables](#_gb09ixlkcc8p), dado que está optimizado para situaciones donde solo intervienen dos partes que se conocen y tienen relación directa, por lo que está destinado a ser económico, rápido, escalable, seguro y muy privado.
 
+Por lo general toda comunicación es entre dos partes, entonces es ahi donde siempre se utiliza **did:peer**. Una vez establecida esa confianza, el canal (**didcomm, v2**) queda abierto para siempre y es 100% seguro para las dos partes. Ese canal es el que luego se utiliza para interactuar y enviar credenciales y pruebas que están atados a otros did. DIDPeer soporta key rotation, con lo cual el canal es en principio de por vida, una vez que estableciste la confianza con alguien y se compartieron los did peer, ya puede comunicarse de forma segura sin intermediarios.
+
 Puede decirse que Peer DIDs son a los DID públicos basados en un [Registro de Datos Verificables](#_gb09ixlkcc8p), lo que construcciones como Ethereum Plasma, los State-Channels o Lighting Network son para las transacciones on-chain, es decir, mueven la mayor parte de las interacciones off-chain, para aumentar la escalabilidad y la privacidad, pero ofrecen opciones para volver a conectarse on-chain según sea necesario.
 
 Para más información sobre el método Peer DID, puede consultarse la especificación en el siguiente link: [https://identity.foundation/peer-did-method-spec/](https://identity.foundation/peer-did-method-spec/)
