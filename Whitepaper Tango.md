@@ -235,43 +235,23 @@ _Nota: esta sección hará referencia a trabajos preexistentes que se analizaron
 ### 3.1. Implementaciones en la esfera pública
 
 - [W3C](https://www.w3.org/TR/did-core/) &amp; [Decentralized Identity Foundation](https://identity.foundation/)
-
 - [Sovrin Foundation](https://sovrin.org/)
-
 - Hyperledger [Aries](https://www.hyperledger.org/use/aries) &amp; [Ursa](https://www.hyperledger.org/use/ursa) &amp; [Indy](https://www.hyperledger.org/use/hyperledger-indy)
-
 - [Trust Over IP](https://trustoverip.org/) (ToIP)
-
 - Ethereum community ([ENS](https://ens.domains/es/) / [EIPs](https://eips.ethereum.org/EIPS/eip-1484))
-
 - [Proof Of Humanity](https://www.proofofhumanity.id/)
-
 - [Estado de Colorado](https://mycolorado.state.co.us/)
-
 - [Unión Europea](https://essif-lab.eu/#:~:text=EUROPEAN%20SELF%2DSOVEREIGN%20IDENTITY%20FRAMEWORK,Internet%20and%20in%20real%20life.)
-
 - [IDunion](https://idunion.org/?lang=en)
-
 - [LACChain ID](https://publications.iadb.org/publications/english/document/LACChain-ID-Framework-A-Set-of-Recommendations-for-Blockchain-Based-Interoperable-Privacy-Preserving-Regulatory-Compliant-Secure-and-Standardized-Digital-Identifiers-Credentials-and-Wallets.pdf)
-
 - [DIDI](https://didi.org.ar/)
-
 - [Encointer](https://encointer.org/) [proof-of-personhood](https://encointer.org/encointer-for-web3/)
-
-- [Pan-Canadian Trust Framework Overview](https://diacc.ca/wp-content/uploads/2016/08/PCTF-Overview-FINAL.pdf).
-
-Es parte de [Digital Identification and Authentication Council of Canada](https://diacc.ca)
-
+- [Pan-Canadian Trust Framework Overview](https://diacc.ca/wp-content/uploads/2016/08/PCTF-Overview-FINAL.pdf). Es parte de [Digital Identification and Authentication Council of Canada](https://diacc.ca)
 - Institute of International Finance (IIF) [Global Assured Identity Network White Paper](https://www.iif.com/Publications/ID/4573/Global-Assured-Identity-Network-White-Paper)
-
 - [The UK digital identity and attributes trust framework](https://www.gov.uk/government/publications/the-uk-digital-identity-and-attributes-trust-framework/the-uk-digital-identity-and-attributes-trust-framework)
-
 - [Global Legal Entity Identifier Foundation](https://www.gleif.org) (GLEIF): esta implementación esta basada en KERI
-
 - [YOMA](https://www.yoma.foundation): Yoma is a youth marketplace that is incubated by UNICEF in Africa.  It enables youth to Learn (through Yoma learning partners), Earn (through employers in the ecosystem) and Thrive by completing Impact challenges (e.g., plastic clean-up, reforestation) that benefit our environment and communities.  All of this is enabled through a SSI-enabled digital CV and personalized learning environment. [ToIP Task Force](https://wiki.trustoverip.org/display/HOME/YOMA+Ecosystem+Task+Force)
-
 - [Good Health Pass](https://www.goodhealthpass.org/blueprint)
-
 - [Wyoming Legislation for DAOs](https://www.wyoleg.gov/Legislation/2021/SF0038)
 
 ### 3.2. Soluciones comerciales
