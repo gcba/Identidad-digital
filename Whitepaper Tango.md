@@ -558,7 +558,7 @@ Intercambio de Presentaciones
 
 El problema más básico para lograr la interoperabilidad en el intercambio de credenciales es definir un mecanismo estándar para facilitar los dos pasos principales en un intercambio de este estilo: una forma para que los “verificadores” describan los requisitos de prueba y para que los “titulares” (holders) describan las presentaciones de prueba alineadas con dichos requisitos.
 
-Para abordar estas necesidades, la especificación “[Presentation Exchange v1.0.0](https://identity.foundation/presentation-exchange/spec/v1.0.0/)” define un protocolo de intercambio de datos que consta de dos un dos formatos de datos: “Definición de Presentación” o “Presentation Definition” y “Envío de Presentación” o  “Presentation Submission”.
+Para abordar estas necesidades, la especificación “[Presentation Exchange 2.0.0](https://identity.foundation/presentation-exchange/)” define un protocolo de intercambio de datos que consta de dos un dos formatos de datos: “Definición de Presentación” o “Presentation Definition” y “Envío de Presentación” o  “Presentation Submission”.
 
 La “Definición de Presentación” es el formato de datos que utilizan los “verificadores” para para articular los requisitos de prueba que deben ser cumplidos por los “titulares” (holders). Entre otras cosas, este formato define el tipo de credenciales que son requeridas y las opciones que son aceptadas para cada tipo (Ej.: se requiere presentar un documento de identidad y las opciones válidas son, un pasaporte, un DNI y una licencia de conducir). Adicionalmente, este formato de datos define las características de encoding y el tipo de algoritmos criptográficos que soporta el verificador.
 
@@ -567,6 +567,11 @@ El “Envío de Presentación” es el formato de datos que utilizan los “titu
 La especificación “Presentation Exchange v1.0.0” está diseñada para ser agnóstica respecto de los distintos tipos de credenciales verificables y también de los sobres de transporte (transport envelope) que típicamente se asocian con cada tipo de credencial verificable. Esto implica que un implementador puede usar JSON Web Tokens (JWTs), Verifiable Credentials (VCs), JWT-VCs o cualquier otro formato claims, y transmitirlos a través de Open ID Connect, DIDComm, Credential Handler API o cualquier otro sobre de transporte.
 
 Adicionalmente, esta especificación no define protocolos de transporte, end-points específicos u otros medios para transmitir los objetos formateados que define, para que otras especificaciones y proyectos que definen dichos mecanismos puedan utilizar dentro de sus flujos los formatos de datos definidos en esta especificación.
+
+Tambien es importante mencionar algunos protocolos adicionales que estan en Aries y seguramente pasen a DIF como por ejemplo:
+-[Hyperledger Aries RFC 0454 - Present Proof Protocol 2.0](https://github.com/hyperledger/aries-rfcs/blob/main/features/0454-present-proof-v2/README.md)
+-[Hyperledger Aries RFC 0453 - Issue Credential Protocol 2.0](https://github.com/hyperledger/aries-rfcs/tree/cd27fc64aa2805f756a118043d7c880354353047/features/0453-issue-credential-v2)
+-[Hyperledger Aries RFC 0434 - Out-of-Band Protocol 1.1](https://github.com/hyperledger/aries-rfcs/tree/bed4989dd6517f7a9de3696800e57e4c6ef49231/features/0434-outofband)
 
 ##### **Wallet and Credential Interactions (WACI)**
 
