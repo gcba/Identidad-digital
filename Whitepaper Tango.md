@@ -30,9 +30,9 @@ V. 0.1
 
 4. **[Conceptos de Identidad Auto-Soberana](#4-conceptos-de-identidad-auto-soberana)**
 
-   4.1 [Terminología](#terminología)
+   4.1 [Terminología](#41-terminología)
 
-   - [Credencial verificable](#credencial verificable)
+   - [Credencial verificable](#credencial-verificable)
 
    - [Identificador descentralizado o DID](#identificador-descentralizado-o-DID)
 
