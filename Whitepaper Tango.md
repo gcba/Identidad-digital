@@ -634,7 +634,9 @@ Estos principios de arquitectura son los que permitirán cumplir con los 10 prin
 
 ## 6. Biometría
 
-_Nota: en esta sección se incluirán las definiciones y criterios relevantes para la implementación de biometría en la creación y gestión de identidades auto soberanas, acceso credenciales y autorización de transacciones, entre otras que puedan surgir._
+_Nota 1: en esta sección se incluirán las definiciones y criterios relevantes para la implementación de biometría en la creación y gestión de identidades auto soberanas, acceso credenciales y autorización de transacciones, entre otras que puedan surgir._
+
+_Nota 2: incorportar estándares de [FIDO](https://fidoalliance.org) en esta sección._
 
 ## 7. Gestión y recupero de identidad
 
