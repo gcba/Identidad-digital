@@ -24,31 +24,9 @@ V. 0.1
 
 3. **[Trabajos preexistentes](#2-trabajos-preexistentes)**
 
-   3.1 [W3C &amp; Decentralized Identity Foundation](#31-w3c--decentralized-identity-foundation)
+   3.1 [Implementaciones en la esfera pública](#31-implementaciones-en-la-esfera-pública)
 
-   3.2 [Sovrin Foundation](#32-sovrin-foundation)
-
-   3.3 [Hyperledger Aries &amp; Ursa &amp; Indy](#33-hyperledger-aries--ursa--indy)
-
-   3.4 [Trust Over IP (ToIP)](#34-trust-over-ip-toip)
-
-   3.5 [Ethereum community (ENS / EIPs)](#35-ethereum-community-ens--eips)
-
-   3.6 [Proof Of Humanity](#36-proof-of-humanity)
-
-   3.7 [Estado de Colorado](#37-estado-de-colorado)
-
-   3.8 [Unión Europea](#38-unión-europea)
-
-   3.9 [IDunion](#39-idunion)
-   
-   3.10 [LACChain ID](#310-lacchain-id)
-   
-   3.11 [DIDI](#311-didi)
-   
-   3.12 [Encointer](#312-encointer)
-
-   3.13 [Soluciones comerciales](#313-soluciones-comerciales)
+   3.2 [Soluciones comerciales](#313-soluciones-comerciales)
 
 4. **[Conceptos de Identidad Auto-Soberana](#4-conceptos-de-identidad-auto-soberana)**
 
@@ -254,31 +232,49 @@ Este documento apunta a servir como marco de referencia para agentes gubernament
 
 _Nota: esta sección hará referencia a trabajos preexistentes que se analizaron y de alguna manera se tomarán en cuenta en el diseño específico de la plataforma propuesta._
 
-### 3.1. [W3C](https://www.w3.org/TR/did-core/) &amp; [Decentralized Identity Foundation](https://identity.foundation/)
+### 3.1. Implementaciones en la esfera pública
 
-### 3.2. [Sovrin Foundation](https://sovrin.org/)
+- [W3C](https://www.w3.org/TR/did-core/) &amp; [Decentralized Identity Foundation](https://identity.foundation/)
 
-### 3.3. Hyperledger [Aries](https://www.hyperledger.org/use/aries) &amp; [Ursa](https://www.hyperledger.org/use/ursa) &amp; [Indy](https://www.hyperledger.org/use/hyperledger-indy)
+- [Sovrin Foundation](https://sovrin.org/)
 
-### 3.4. [Trust Over IP](https://trustoverip.org/) (ToIP)
+- Hyperledger [Aries](https://www.hyperledger.org/use/aries) &amp; [Ursa](https://www.hyperledger.org/use/ursa) &amp; [Indy](https://www.hyperledger.org/use/hyperledger-indy)
 
-### 3.5. Ethereum community ([ENS](https://ens.domains/es/) / [EIPs](https://eips.ethereum.org/EIPS/eip-1484))
+- [Trust Over IP](https://trustoverip.org/) (ToIP)
 
-### 3.6. [Proof Of Humanity](https://www.proofofhumanity.id/)
+- Ethereum community ([ENS](https://ens.domains/es/) / [EIPs](https://eips.ethereum.org/EIPS/eip-1484))
 
-### 3.7. [Estado de Colorado](https://mycolorado.state.co.us/)
+- [Proof Of Humanity](https://www.proofofhumanity.id/)
 
-### 3.8. [Unión Europea](https://essif-lab.eu/#:~:text=EUROPEAN%20SELF%2DSOVEREIGN%20IDENTITY%20FRAMEWORK,Internet%20and%20in%20real%20life.)
+- [Estado de Colorado](https://mycolorado.state.co.us/)
 
-### 3.9. [IDunion](https://idunion.org/?lang=en)
+- [Unión Europea](https://essif-lab.eu/#:~:text=EUROPEAN%20SELF%2DSOVEREIGN%20IDENTITY%20FRAMEWORK,Internet%20and%20in%20real%20life.)
 
-### 3.10. [LACChain ID](https://publications.iadb.org/publications/english/document/LACChain-ID-Framework-A-Set-of-Recommendations-for-Blockchain-Based-Interoperable-Privacy-Preserving-Regulatory-Compliant-Secure-and-Standardized-Digital-Identifiers-Credentials-and-Wallets.pdf)
+- [IDunion](https://idunion.org/?lang=en)
 
-### 3.11. [DIDI](https://didi.org.ar/)
+- [LACChain ID](https://publications.iadb.org/publications/english/document/LACChain-ID-Framework-A-Set-of-Recommendations-for-Blockchain-Based-Interoperable-Privacy-Preserving-Regulatory-Compliant-Secure-and-Standardized-Digital-Identifiers-Credentials-and-Wallets.pdf)
 
-### 3.12. [Encointer](https://encointer.org/) [proof-of-personhood](https://encointer.org/encointer-for-web3/)
+- [DIDI](https://didi.org.ar/)
 
-### 3.13. Soluciones comerciales
+- [Encointer](https://encointer.org/) [proof-of-personhood](https://encointer.org/encointer-for-web3/)
+
+- [Pan-Canadian Trust Framework Overview](https://diacc.ca/wp-content/uploads/2016/08/PCTF-Overview-FINAL.pdf).
+
+Es parte de [Digital Identification and Authentication Council of Canada](https://diacc.ca)
+
+- Institute of International Finance (IIF) [Global Assured Identity Network White Paper](https://www.iif.com/Publications/ID/4573/Global-Assured-Identity-Network-White-Paper)
+
+- [The UK digital identity and attributes trust framework](https://www.gov.uk/government/publications/the-uk-digital-identity-and-attributes-trust-framework/the-uk-digital-identity-and-attributes-trust-framework)
+
+- [Global Legal Entity Identifier Foundation](https://www.gleif.org) (GLEIF): esta implementación esta basada en KERI
+
+- [YOMA](https://www.yoma.foundation): Yoma is a youth marketplace that is incubated by UNICEF in Africa.  It enables youth to Learn (through Yoma learning partners), Earn (through employers in the ecosystem) and Thrive by completing Impact challenges (e.g., plastic clean-up, reforestation) that benefit our environment and communities.  All of this is enabled through a SSI-enabled digital CV and personalized learning environment. [ToIP Task Force](https://wiki.trustoverip.org/display/HOME/YOMA+Ecosystem+Task+Force)
+
+- [Good Health Pass](https://www.goodhealthpass.org/blueprint)
+
+- [Wyoming Legislation for DAOs](https://www.wyoleg.gov/Legislation/2021/SF0038)
+
+### 3.2. Soluciones comerciales
 
 - [Cheqd](https://www.cheqd.io)
 - [Evernym](https://www.evernym.com)
