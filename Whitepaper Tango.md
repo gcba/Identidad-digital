@@ -30,9 +30,11 @@ V. 0.1
 
 4. **[Conceptos de Identidad Auto-Soberana](#4-conceptos-de-identidad-auto-soberana)**
 
-   4.1 [Terminología](#_9ak0sa70kj7r)
+   4.1 [Terminología](#terminología)
 
-   - [Identificador descentralizado o DID (por sus siglas en inglés)](#41-terminología)
+   - [Credencial verificable](#credencial verificable)
+
+   - [Identificador descentralizado o DID](#identificador-descentralizado-o-DID)
 
    - [Sujeto de un DID (DID Subject)](#sujeto-de-un-did-did-subject)
 
@@ -272,7 +274,9 @@ Según Sovrin, "identidad auto-soberana (Self-sovereign identity o SSI por sus s
 
 ### 4.1. Terminología
 
-#### **Identificador descentralizado o DID** (por sus siglas en inglés)
+#### **Credencial verificable**
+
+#### **Identificador descentralizado o DID**
 
 Un identificador persistente y globalmente único que no requiere una autoridad de registro centralizada porque se genera y/o registra utilizando plataformas descentralizadas (Ej.: blockchain). Mientras el formato genérico de un DID se define en la especificación [DID-CORE](https://www.w3.org/TR/did-core/) del W3C, cada DID Method en particular define sus esquemas DID específicos. ![](RackMultipart20220326-4-1cj7fwj_html_c12c0dce6bb476cd.png)
 
