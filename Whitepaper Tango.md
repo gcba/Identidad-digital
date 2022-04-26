@@ -74,9 +74,11 @@ V. 0.1
 
    - [Guardianship](#guardianship)
 
-   - [Delegation](#Delegation)
+   - [Delegation](#delegation)
 
-   - [Compliance](#Compliance)
+   - [Compliance](#compliance)
+
+   - [Normativas de privacidad](#normativas-de-privacidad)
 
    5.3 [Nivel 3: intercambio y verificación de credenciales](#53-nivel-3-intercambio-y-verificación-de-credenciales)
    
@@ -484,7 +486,9 @@ _A desarrollar: existe una opción simple, que además es indispensable para que
 
 #### **Compliance**
 
-Normativas de privacidad: eIDAS, GDRP, entre otras.
+#### **Normativas de privacidad**
+
+Mencionar normativas de privacidad: CCPA, eIDAS, GDRP, entre otras.
 
 ### 5.3. Nivel 3: intercambio y verificación de credenciales
 
