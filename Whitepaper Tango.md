@@ -603,6 +603,10 @@ Eventualmente, para tener compatibilidad hacia atrás con aplicaciones de la Web
 
 ### 5.4. Nivel 4: aplicaciones
 
+El nivel 1 de ToIP es el VDR donde quedan anclados los DID desde donde se van a validar las claves públicas. Pero también es el lugar donde se puede validar otros temas como son los relacionados a credenciales. En particular se suele usar para:
+- Guardar los esquemas de las credenciales: esto lo usa Indy (sobrin)y KILT entre otras. No lo veo tan necesario o crítico.
+- Guardar las revocaciones a las credenciales: **esto es muy importante tenerlo**.
+
 El nivel cuatro del modelo de ToIP es el que facilita el desarrollo de “ecosistemas de confianza digital”, familias completas de aplicaciones y credenciales que no solo están diseñadas para interoperar técnicamente, sino que además comparten un “marco común de gobernanza del ecosistema”, el cual especifica el propósito, los principios y las políticas que se aplican a todas las autoridades de gobierno y marcos de gobierno que operen en cada uno de los cuatro niveles del stack de ToIP para cada ecosistema. Entre otras cosas, esto permite definir modelos de información estandarizados para el conjunto de credenciales propio de cada ecosistema lo que a su vez habilita la interoperabilidad funcional de extremo-a-extremo dentro de los mismos.
 
 De esta manera, el “triángulo de confianza”, definido e implementado en el nivel 3, evoluciona al “diamante de confianza”, tal como puede verse en la siguiente figura, en la cual: mientras la mitad superior muestra la arquitectura básica del triángulo de confianza utilizada por las credenciales verificables, la mitad inferior muestra un segundo triángulo de confianza, el “triángulo de confianza de gobierno”, que puede resolver una serie de problemas relacionados con la adopción y la escalabilidad en el mundo real de las credenciales verificables y el stack de ToIP.
@@ -621,6 +625,10 @@ Con el stack de ToIP, esta arquitectura de gobierno se puede aplicar a cualquier
 Hoy Internet es una red de redes, donde las interconexiones entre cada red se facilitan a través del stack de TCP/IP. ToIP habilita la evolución hacia un ecosistema de ecosistemas de confianza digital, donde las interconexiones entre cada uno de estos ecosistemas se facilita a través del stack de ToIP y los límites de cada ecosistema de confianza digital están determinados por los marcos de gobernanza bajo los cuales operan sus miembros.
 
 Esto permite que Internet conserve la misma diversidad y riqueza que tiene hoy en día, pero con una nueva capacidad que permite formar y mantener relaciones de confianza de cualquier tipo – personal, comercial, social, académica, política – y a cualquier distancia. Estas relaciones de confianza pueden traspasar fluir de un ecosistema de confianza a otro de la misma manera como los paquetes IP pueden fluir de una red a otra en la actual Internet.
+
+Documentos para tener como referencia:
+- [Introduction to Trust Over IP, Version 2.0](https://trustoverip.org/wp-content/uploads/Introduction-to-ToIP-V2.0-2021-11-17.pdf)
+- [Design Principles for the Trust over IP Stack, Version 1.0](https://trustoverip.org/wp-content/uploads/Design-Principles-for-the-ToIP-Stack-V1.0-2022-11-17.pdf)
 
 #### **Tango en Nivel 4**
 
