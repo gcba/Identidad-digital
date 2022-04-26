@@ -476,8 +476,6 @@ _A desarrollar: existe una opción simple, que además es indispensable para que
 
 #### **Recuperación de identidad**
 
-- backup and recovery
-
 #### **Buenas prácticas de seguridad**
 
 #### **Guardianship**
@@ -589,11 +587,11 @@ Eventualmente, para tener compatibilidad hacia atrás con aplicaciones de la Web
 
 #### **Otros temas a abordar en esta sección**
 
--Credenciales vs NFTs
+- Credenciales vs NFTs
 
--Selective disclosure
+- Selective disclosure
 
--Recuperación de identidad
+- Recuperación de identidad
 
 - Guardianship
 
