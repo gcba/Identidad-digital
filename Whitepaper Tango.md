@@ -342,7 +342,7 @@ Si bien todos estas aproximaciones cubren, en alguna medida, los requerimientos 
 
 #### **DID Methods**
 
-Los [métodos DIDs](#_1jz99r2mnluw) representan el componente central en la implementación de este nivel del modelo, y una de las decisiones más críticas en este sentido es la definición de qué métodos DID serán soportados por la plataforma para cada escenario en particular, concretamente: qué métodos DIDs serán soportados para administrar DIDs generados en esta plataforma y qué métodos DID serán soportados sólo en modalidad resolución (sólo lectura) para efectos de compatibilidad e interoperabilidad con otras plataformas similares.
+Los [métodos DIDs](#métodos-did-did-methods) representan el componente central en la implementación de este nivel del modelo, y una de las decisiones más críticas en este sentido es la definición de qué métodos DID serán soportados por la plataforma para cada escenario en particular, concretamente: qué métodos DIDs serán soportados para administrar DIDs generados en esta plataforma y qué métodos DID serán soportados sólo en modalidad resolución (sólo lectura) para efectos de compatibilidad e interoperabilidad con otras plataformas similares.
 
 Es importante destacar que no hay una única implementación de un método DID, sino múltiples implementaciones que cumplen con la especificación [DID-CORE](https://www.w3.org/TR/did-core/) y que están optimizadas y personalizadas para distintos requerimientos. A la fecha, hay más de 70 métodos DID registrados en el [W3C DID registry](https://www.w3.org/TR/did-spec-registries/#did-methods), y seguramente ese número seguirá creciendo aceleradamente en el futuro próximo.
 
