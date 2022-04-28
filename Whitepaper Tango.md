@@ -1,7 +1,5 @@
 # Whitepaper Tango[^1]
 
-## Identidad Auto-Soberana: Fundamentos de un Nuevo Ecosistema Digital Descentralizado
-
 _Buenos Aires, Argentina_
 
 V. 0.1
@@ -294,7 +292,7 @@ Los métodos DID son el mecanismo mediante el cual se crea, resuelve, actualiza 
 
 #### **Documentos DID**
 
-Los "documentos DID" contienen información asociada con un DID. Por lo general, expresan métodos de verificación, como claves públicas de criptografía asimétrica y "end-points" a servicios relevantes para las interacciones con el sujeto DID. Las propiedades genéricas admitidas en un documento DID se especifican en la sección "[Core Propoerties](https://www.w3.org/TR/did-core/#core-properties)" de la especificación [DID-CORE](https://www.w3.org/TR/did-core/) del W3C.
+Los "documentos DID" contienen información asociada con un DID. Por lo general, expresan métodos de verificación, como claves públicas de criptografía asimétrica y "end-points" a servicios relevantes para las interacciones con el sujeto DID. Las propiedades genéricas admitidas en un documento DID se especifican en la sección "[Core Properties](https://www.w3.org/TR/did-core/#core-properties)" de la especificación [DID-CORE](https://www.w3.org/TR/did-core/) del W3C.
 
 #### **Registros de datos verificables**
 
