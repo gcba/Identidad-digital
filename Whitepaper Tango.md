@@ -832,21 +832,20 @@ Es importante aclarar que, excepcionalmente, algunas billeteras cripto implement
 
 ## Glosario
 
-- Protocolo:
-- Blockchain:
-- Nodo:
-- ZKP:
-- Bootstrapping:
+- Protocolo: conjunto de reglas de comunicación que rigen el intercambio de información entre dos equipos o sistemas conectados entre sí.
+- Blockchain: una cadena de bloques es una estructura de datos cuya información se agrupa en conjuntos (bloques) a los que se les añade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal para establecer una trazailidad a través de cálculos criptográficos.
+- ZKP: un protocolo de conocimiento cero o prueba de conocimiento nulo, también conocidas por las siglas ZKP (del inglés Zero Knowledge Proof), es un protocolo criptográfico que establece un método para que una de las partes pruebe a otra que una declaración (generalmente matemática) es cierta, sin revelar nada más que la veracidad de la declaración.
+- Bootstrapping: se refiere al proceso de arranque de un sistema informático.
 - W3C: hace referencia a World Wide Web Consortium (W3C), es un consorcio internacional en el que las organizaciones miembros, el personal a tiempo completo y el público en general trabajan juntos para desarrollar normas y directrices web diseñadas para garantizar el crecimiento a largo plazo de la web.
-- HYPERLEDGER:
-- Ethereum:
-- SSI:
-- DID:
-- Credencial:
+- Hyperledger: es un proyecto paraguas de código abierto para crear una cadena de bloques iniciado en diciembre de 2015 por la Fundación Linux, para apoyar a los ledgers distribuidos basados en su tecnología.
+- Ethereum: es una plataforma de código abierto que sirve para ejecutar contratos inteligentes. La plataforma tiene un alto grado de descentralización, a diferencia de otras cadenas de bloques. Es programable, lo que significa que los desarrolladores pueden usarl Ethereum en la creación de aplicaciones descentralizadas.
+- SSI: el termino refiere a Identidad Auto-Soberana (en Inglés Self-Sovereign Identity (SSI)).
+- DID: el termino refiere a los identificadores descentralizados (IDD; DID, por sus siglas en inglés). Son un tipo de identificador que permite una identidad digital verificable de forma descentralizada. Son un componente importante de las aplicaciones web descentralizadas.
+- Credencial: una credencial es una orden o un documento que atestigua o autoriza la calificación, competencia o autoridad otorgada a un individuo por un tercero con autoridad de iure o de facto.
 - EVM: hace referencia a Ethereum Virtual Machine o Máquina virtual de Ethereum.
 - IPFS: hace referencia a InterPlanetary File System, un sistema de archivo descentralizado que busca garantizar la seguridad, privacidad y resistencia a la censura de los datos.
 - ETHR:
-- Sidetree:
+- Sidetree: Sidetree es un protocolo de capa 2 (L2) basado en la cadena de bloques existente, específicamente para la gestión de identidad descentralizada (DID).
 - WEB3:
 - Criptomoneda:
 - NFT:
