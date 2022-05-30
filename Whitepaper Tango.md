@@ -846,13 +846,11 @@ Es importante aclarar que, excepcionalmente, algunas billeteras cripto implement
 - IPFS: hace referencia a InterPlanetary File System, un sistema de archivo descentralizado que busca garantizar la seguridad, privacidad y resistencia a la censura de los datos.
 - ETHR:
 - Sidetree: Sidetree es un protocolo de capa 2 (L2) basado en la cadena de bloques existente, específicamente para la gestión de identidad descentralizada (DID).
-- WEB3:
-- Criptomoneda:
-- NFT:
-- Agente:
-- Multisig:
-- DWN:
-- Topología:
+- WEB3: es el nombre que algunos tecnólogos le han dado a la idea de un nuevo tipo de servicio de internet construido utilizando cadenas de bloques descentralizadas, es decir, los sistemas de registro compartido que utilizan criptomonedas como Ethereum.
+- NFT: Un token NO fungible, o NFT por sus siglas en inglés, es un activo digital encriptado, un tipo especial de token criptográfico que representa algo único. Los tókenes no fungibles no son, por tanto, intercambiables de forma idéntica.
+- Agente: cosa que tiene poder para producir un efecto, causa activa de algo.
+- Multisig: multisig significa firma múltiple, que es un tipo específico de firmas digitales que hace posible que dos o más usuarios firmen documentos como un grupo. Por lo tanto, se produce una firma múltiple mediante la combinación de varias firmas únicas.
+- DWN: un nodo de retransmisión de mensajes y almacenamiento de datos personales y de aplicaciones descentralizados, tal como se define en la especificación de nodo web descentralizado de DIF. Los usuarios pueden tener varios nodos que replican sus datos entre ellos.
 - Primitivas: las primitivas criptográficas son los algoritmos de mas bajo nivel, que luego se usan para construir protocolos o funciones de criptografía. Un "[merkle tree](https://en.wikipedia.org/wiki/Merkle_tree)" es un ejemplo donde se ve fácilmente la primitiva y la función.
 
 [^1]: Nombre sujeto a discusión con la comunidad.
