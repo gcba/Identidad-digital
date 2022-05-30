@@ -844,7 +844,6 @@ Es importante aclarar que, excepcionalmente, algunas billeteras cripto implement
 - Credencial: una credencial es una orden o un documento que atestigua o autoriza la calificación, competencia o autoridad otorgada a un individuo por un tercero con autoridad de iure o de facto.
 - EVM: hace referencia a Ethereum Virtual Machine o Máquina virtual de Ethereum.
 - IPFS: hace referencia a InterPlanetary File System, un sistema de archivo descentralizado que busca garantizar la seguridad, privacidad y resistencia a la censura de los datos.
-- ETHR:
 - Sidetree: Sidetree es un protocolo de capa 2 (L2) basado en la cadena de bloques existente, específicamente para la gestión de identidad descentralizada (DID).
 - WEB3: es el nombre que algunos tecnólogos le han dado a la idea de un nuevo tipo de servicio de internet construido utilizando cadenas de bloques descentralizadas, es decir, los sistemas de registro compartido que utilizan criptomonedas como Ethereum.
 - NFT: Un token NO fungible, o NFT por sus siglas en inglés, es un activo digital encriptado, un tipo especial de token criptográfico que representa algo único. Los tókenes no fungibles no son, por tanto, intercambiables de forma idéntica.
